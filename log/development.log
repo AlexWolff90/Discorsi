@@ -942,3 +942,363 @@ Migrating to AddPasswordDigestToUsers (20150420192205)
   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Alex"], ["last_name", "Wolff"], ["email", "awolff@example.com"], ["password_digest", "$2a$10$wcDIyx6iYmloxu6KKhxrcunYDvKykQbcdf2PgeocJkLtHTxQQN6HW"], ["created_at", "2015-04-20 19:44:23.967273"], ["updated_at", "2015-04-20 19:44:23.967273"]]
   [1m[35m (1.5ms)[0m  commit transaction
   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "awolff@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+
+
+Started GET "/" for ::1 at 2015-04-20 15:40:42 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1235ms (Views: 1226.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-04-20 15:40:44 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-04-20 15:40:44 -0500
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-04-20 15:40:44 -0500
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-04-20 15:40:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-04-20 15:40:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-04-20 15:40:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-04-20 15:40:44 -0500
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-04-20 15:40:44 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-04-20 15:40:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-04-20 15:40:44 -0500
+
+
+Started GET "/assets/rails.png" for ::1 at 2015-04-20 15:40:44 -0500
+
+
+Started GET "/users/1" for ::1 at 2015-04-20 15:40:47 -0500
+
+SyntaxError (/Users/AlexWolff/Development/Discorsi/discorsi/app/controllers/users_controller.rb:6: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/users_controller.rb:6: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/AlexWolff/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/AlexWolff/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/AlexWolff/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/AlexWolff/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.6ms)
+  Rendered /Users/AlexWolff/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (94.8ms)
+
+
+Started GET "/" for ::1 at 2015-04-20 15:41:18 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 121ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-04-20 15:41:18 -0500
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-04-20 15:41:18 -0500
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-04-20 15:41:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-04-20 15:41:18 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-04-20 15:41:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-04-20 15:41:18 -0500
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-04-20 15:41:18 -0500
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-04-20 15:41:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-04-20 15:41:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-04-20 15:41:18 -0500
+
+
+Started GET "/assets/rails.png" for ::1 at 2015-04-20 15:41:18 -0500
+
+
+Started GET "/users/1" for ::1 at 2015-04-20 15:41:19 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 78ms (Views: 57.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-04-20 15:41:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-04-20 15:41:19 -0500
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-04-20 15:41:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-04-20 15:41:19 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-04-20 15:41:19 -0500
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-04-20 15:41:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-04-20 15:41:19 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-04-20 15:41:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-04-20 15:41:19 -0500
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-04-20 15:41:19 -0500
+
+
+Started GET "/" for ::1 at 2015-04-20 15:42:33 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 114ms (Views: 106.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-04-20 15:42:34 -0500
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-04-20 15:42:34 -0500
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-04-20 15:42:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-04-20 15:42:34 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-04-20 15:42:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-04-20 15:42:34 -0500
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-04-20 15:42:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-04-20 15:42:34 -0500
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-04-20 15:42:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-04-20 15:42:34 -0500
+
+
+Started GET "/assets/rails.png" for ::1 at 2015-04-20 15:42:34 -0500
+
+
+Started GET "/users/1" for ::1 at 2015-04-20 15:42:34 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 71772ms (Views: 192.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-04-20 15:43:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-04-20 15:43:46 -0500
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-04-20 15:43:46 -0500
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-04-20 15:43:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-04-20 15:43:46 -0500
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-04-20 15:43:46 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-04-20 15:43:46 -0500
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-04-20 15:43:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-04-20 15:43:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-04-20 15:43:46 -0500
+
+
+Started GET "/" for ::1 at 2015-04-20 15:53:52 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 124ms (Views: 116.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/assets/rails.png" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/users/1" for ::1 at 2015-04-20 15:53:53 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 67ms (Views: 55.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-04-20 15:53:53 -0500
+
+
+Started GET "/" for ::1 at 2015-04-20 16:00:40 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 961ms (Views: 954.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for ::1 at 2015-04-20 16:00:41 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 80ms (Views: 67.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-04-20 16:00:41 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-04-20 16:00:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-04-20 16:00:41 -0500
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-04-20 16:00:41 -0500
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-04-20 16:00:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-04-20 16:00:41 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-04-20 16:00:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-04-20 16:00:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-04-20 16:00:41 -0500
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-04-20 16:00:41 -0500
