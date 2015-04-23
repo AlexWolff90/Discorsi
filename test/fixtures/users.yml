@@ -5,3 +5,9 @@ alex:
   last_name: Example
   email: alex@example.com
   password_digest: <%= User.digest('password') %>
+
+archer:
+  first_name: Sterling
+  last_name: Archer
+  email: duchess@example.gov
+  password_digest: <%= User.digest('password') %>
