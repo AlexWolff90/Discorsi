@@ -4591,3 +4591,1288 @@ Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-04-23 12:20:02 -050
 
 
 Started GET "/assets/application.js?body=1" for ::1 at 2015-04-23 12:20:02 -0500
+
+
+Started GET "/" for ::1 at 2015-04-23 16:13:11 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (17.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 1183ms (Views: 1174.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-04-23 16:13:12 -0500
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-04-23 16:13:12 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-04-23 16:13:12 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-04-23 16:13:12 -0500
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-04-23 16:13:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-04-23 16:13:12 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-04-23 16:13:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-04-23 16:13:12 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-04-23 16:13:12 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-04-23 16:13:12 -0500
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-04-23 16:13:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-04-23 16:13:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-04-23 16:13:12 -0500
+
+
+Started GET "/assets/rails.png" for ::1 at 2015-04-23 16:13:12 -0500
+
+
+Started GET "/users" for ::1 at 2015-04-23 16:13:18 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 109ms (Views: 106.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for ::1 at 2015-04-23 16:13:26 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 103ms (Views: 101.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2/edit" for ::1 at 2015-04-23 16:13:31 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered shared/_error_messages.html.erb (2.3ms)
+  Rendered users/edit.html.erb within layouts/application (17.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 96ms (Views: 94.9ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/users/2" for ::1 at 2015-04-23 16:13:34 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/IaKwiFNr+64yi6rRS+GpEhOfBrKSEoawaMAZBjxjJSRRehqZV/q4rQkqmAomYeGmWAzlaWisQT6/zI+gadiYw==", "user"=>{"first_name"=>"Alex", "last_name"=>"Wolff", "email"=>"a.leon.wolff@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save changes", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.1ms)[0m  SELECT  1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('a.leon.wolff@gmail.com') AND "users"."id" != 2) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 15ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/2" for ::1 at 2015-04-23 16:13:34 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 89ms (Views: 87.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-04-23 16:13:34 -0500
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-04-23 16:13:34 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-04-23 16:13:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-04-23 16:13:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-04-23 16:13:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-04-23 16:13:34 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-04-23 16:13:34 -0500
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-04-23 16:13:34 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-04-23 16:13:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-04-23 16:13:34 -0500
+
+
+Started GET "/users/2/edit" for ::1 at 2015-04-23 16:13:39 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/edit.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 92ms (Views: 90.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/users/2" for ::1 at 2015-04-23 16:13:44 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AqcZhbIJHuysst5UBcTYvX5rN1jJav+aHfEygCt64X5vZHst9htb4KBcWp9octmfr0V416aABIQmrQDasiwPiQ==", "user"=>{"first_name"=>"Alex", "last_name"=>"", "email"=>"a.leon.wolff@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save changes", "id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('a.leon.wolff@gmail.com') AND "users"."id" != 2) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (1.1ms)
+  Rendered users/edit.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 102ms (Views: 95.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-04-23 16:13:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-04-23 16:13:44 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-04-23 16:13:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-04-23 16:13:44 -0500
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-04-23 16:13:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-04-23 16:13:44 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-04-23 16:13:44 -0500
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-04-23 16:13:44 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-04-23 16:13:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-04-23 16:13:44 -0500
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20150420162621)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150420162621"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to AddIndexToUsersEmail (20150420173223)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150420173223"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to AddPasswordDigestToUsers (20150420192205)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "users" ADD "password_digest" varchar
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150420192205"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to AddRememberDigestToUsers (20150422192249)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "remember_digest" varchar
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150422192249"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Example"], ["last_name", "User"], ["email", "user@example.com"], ["password_digest", "$2a$10$3ljvt7FQbvCJz9KeCFoEcuGr1H/VoADu99iXpfLFPfrFQVwz.CQ46"], ["created_at", "2015-04-23 21:21:46.504838"], ["updated_at", "2015-04-23 21:21:46.504838"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-1@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Samara"], ["last_name", "Welch"], ["email", "user-1@example.com"], ["password_digest", "$2a$10$FyJ.x9w8s6A9UDKrZm4iw.JFleeAc04wFRieI7NsRF54UQAHlLq/W"], ["created_at", "2015-04-23 21:21:46.834004"], ["updated_at", "2015-04-23 21:21:46.834004"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-2@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Maxie"], ["last_name", "Jacobs"], ["email", "user-2@example.com"], ["password_digest", "$2a$10$8GK9JRiOn.HfuGZKBIj7hewbIP2ZJ2EW2B6a5lmK2644SnyPguMbm"], ["created_at", "2015-04-23 21:21:46.906267"], ["updated_at", "2015-04-23 21:21:46.906267"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-3@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Oma"], ["last_name", "Ward"], ["email", "user-3@example.com"], ["password_digest", "$2a$10$kshz8Gqcssb08KgMk9BHEOUCgR1k42sJzhUxVOgfAjXaWhXf8N4ba"], ["created_at", "2015-04-23 21:21:46.980806"], ["updated_at", "2015-04-23 21:21:46.980806"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-4@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Winfield"], ["last_name", "Ernser"], ["email", "user-4@example.com"], ["password_digest", "$2a$10$yJTQtPoVDv5zzvQ/zUVxl.nYW9xtDUlArcdsZGeqOuj4SFwtuoaDW"], ["created_at", "2015-04-23 21:21:47.061565"], ["updated_at", "2015-04-23 21:21:47.061565"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-5@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Justen"], ["last_name", "Schuppe"], ["email", "user-5@example.com"], ["password_digest", "$2a$10$DnJFTOlIMmu.53I50GsXJOn33ExZJxZMoHGxvUsoqpjhfC1Z6pZnS"], ["created_at", "2015-04-23 21:21:47.141247"], ["updated_at", "2015-04-23 21:21:47.141247"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-6@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Meaghan"], ["last_name", "Davis"], ["email", "user-6@example.com"], ["password_digest", "$2a$10$3V0ojkA0wymA.5g8gyihXeO2xCDmbPyl9n2migAfdh4aYYTypteFi"], ["created_at", "2015-04-23 21:21:47.228040"], ["updated_at", "2015-04-23 21:21:47.228040"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-7@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Sofia"], ["last_name", "Labadie"], ["email", "user-7@example.com"], ["password_digest", "$2a$10$LCXfYFUCejGPKvx8wrVqru88rdmb8ncP5Bfty8UaZ3NTJVphHK8Ne"], ["created_at", "2015-04-23 21:21:47.296217"], ["updated_at", "2015-04-23 21:21:47.296217"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-8@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Aiden"], ["last_name", "Prohaska"], ["email", "user-8@example.com"], ["password_digest", "$2a$10$l12kuhU9JlTp.Mt3Cyec7OAzSbiYG3aH89u0apnILfDf2ELYDMFMu"], ["created_at", "2015-04-23 21:21:47.366840"], ["updated_at", "2015-04-23 21:21:47.366840"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-9@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Ernie"], ["last_name", "Kihn"], ["email", "user-9@example.com"], ["password_digest", "$2a$10$OMpa2jvoFR.ePI9vs/ZgWuFnFAJaP5.79X5E5OG0QHAEMHW6kCWXm"], ["created_at", "2015-04-23 21:21:47.451299"], ["updated_at", "2015-04-23 21:21:47.451299"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-10@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Lennie"], ["last_name", "McGlynn"], ["email", "user-10@example.com"], ["password_digest", "$2a$10$QzEWyRc8HLvQZFJDjW.uQ.HMEN9QUohPySgRpp1DAb30ThQNolmVC"], ["created_at", "2015-04-23 21:21:47.529836"], ["updated_at", "2015-04-23 21:21:47.529836"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-11@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Deborah"], ["last_name", "Sawayn"], ["email", "user-11@example.com"], ["password_digest", "$2a$10$jHHTdtgfGuIHqGF6Yf2FVOBz3qe8x36HPmdxFF4BN.yLbu8P2r8Mu"], ["created_at", "2015-04-23 21:21:47.598979"], ["updated_at", "2015-04-23 21:21:47.598979"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-12@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Evangeline"], ["last_name", "Runte"], ["email", "user-12@example.com"], ["password_digest", "$2a$10$H43Ca99QyAc92K9sj4f4U.UFFiLYahAgg.obk0UqO4dtK0aQtsrVu"], ["created_at", "2015-04-23 21:21:47.666751"], ["updated_at", "2015-04-23 21:21:47.666751"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-13@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Eleonore"], ["last_name", "Carter"], ["email", "user-13@example.com"], ["password_digest", "$2a$10$ih2asCEOR12KQvdWYBuskeSegRlBZkXOOpsZ6LNnK1/OsyW/XWrZu"], ["created_at", "2015-04-23 21:21:47.744577"], ["updated_at", "2015-04-23 21:21:47.744577"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-14@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Dawn"], ["last_name", "Kilback"], ["email", "user-14@example.com"], ["password_digest", "$2a$10$6UlCvYymqOfy1nhvY89nq.ZenbC11u2dsWZhby.JphtKgng2i6Qde"], ["created_at", "2015-04-23 21:21:47.826632"], ["updated_at", "2015-04-23 21:21:47.826632"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-15@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Jorge"], ["last_name", "Marquardt"], ["email", "user-15@example.com"], ["password_digest", "$2a$10$Kk25Djv5wFD/lsn9eeMV/u6HVT76WzAxIvjsOqA2yOgJJpZzZ/55W"], ["created_at", "2015-04-23 21:21:47.897484"], ["updated_at", "2015-04-23 21:21:47.897484"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-16@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Loren"], ["last_name", "Upton"], ["email", "user-16@example.com"], ["password_digest", "$2a$10$llLPD0/tXUmo36dPd2FbA.aK0Cd/ISyeNGGM8Un.vX4A8w/dWQ1FG"], ["created_at", "2015-04-23 21:21:47.976832"], ["updated_at", "2015-04-23 21:21:47.976832"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-17@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Blair"], ["last_name", "Considine"], ["email", "user-17@example.com"], ["password_digest", "$2a$10$gCal3lmwNx9pTmO7cxWPHe3NC1VN01om4UWdejkuGTl6aXVi6MxWm"], ["created_at", "2015-04-23 21:21:48.048456"], ["updated_at", "2015-04-23 21:21:48.048456"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-18@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Monte"], ["last_name", "Steuber"], ["email", "user-18@example.com"], ["password_digest", "$2a$10$ZchOiCsopg21e/zNWffdGOc3ScG9YA1MWzEtSI/xIcDAHSPPjgsP6"], ["created_at", "2015-04-23 21:21:48.124821"], ["updated_at", "2015-04-23 21:21:48.124821"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-19@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Kale"], ["last_name", "Bailey"], ["email", "user-19@example.com"], ["password_digest", "$2a$10$I.r1UgBSNIXiHTuDfmIMROPyeWdJEgDySz51W5CXR0rKPNvFWAx4O"], ["created_at", "2015-04-23 21:21:48.197704"], ["updated_at", "2015-04-23 21:21:48.197704"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-20@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Keeley"], ["last_name", "Turner"], ["email", "user-20@example.com"], ["password_digest", "$2a$10$b3/pLz2bmjCfeDGX/Vz0neslfkwGt8wU2GWzXlzIHSyGMpSd2eYoG"], ["created_at", "2015-04-23 21:21:48.275938"], ["updated_at", "2015-04-23 21:21:48.275938"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-21@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Josh"], ["last_name", "Sipes"], ["email", "user-21@example.com"], ["password_digest", "$2a$10$d9AMh0c1f44oB5B9/6oWQeJP2Rp7kjGlelnowxP3PK8680U4OyARe"], ["created_at", "2015-04-23 21:21:48.349566"], ["updated_at", "2015-04-23 21:21:48.349566"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-22@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Carole"], ["last_name", "Zulauf"], ["email", "user-22@example.com"], ["password_digest", "$2a$10$Fcl2FMC30q2ViyPScjkDK.AC5D1QqAs46ibXjzxpYYywZqY9QhGhO"], ["created_at", "2015-04-23 21:21:48.421047"], ["updated_at", "2015-04-23 21:21:48.421047"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-23@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Van"], ["last_name", "Pouros"], ["email", "user-23@example.com"], ["password_digest", "$2a$10$CgAbpm/BpNzuXRMfap/1hefZC1eS1N6H.vR6GYlfAu2H/Smh8XMSm"], ["created_at", "2015-04-23 21:21:48.508253"], ["updated_at", "2015-04-23 21:21:48.508253"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-24@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Cleta"], ["last_name", "Smith"], ["email", "user-24@example.com"], ["password_digest", "$2a$10$RRmSGNLnQ9VNsER8xs.5u.r7YXoLLfRy6BXuvhbp9VC4MIHEL6YYG"], ["created_at", "2015-04-23 21:21:48.591197"], ["updated_at", "2015-04-23 21:21:48.591197"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-25@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Amya"], ["last_name", "Gerlach"], ["email", "user-25@example.com"], ["password_digest", "$2a$10$x6248fnap/nOXsEikCh9CuMS7sTnAFSGooux12H.x0yPLC4UnTwG2"], ["created_at", "2015-04-23 21:21:48.668411"], ["updated_at", "2015-04-23 21:21:48.668411"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-26@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Alva"], ["last_name", "Bergnaum"], ["email", "user-26@example.com"], ["password_digest", "$2a$10$Ol9BbUST5ljFC.nqlGcF2eQ8L0HkA8c7wTtVXGI1rQRwjsd1o5zQG"], ["created_at", "2015-04-23 21:21:48.754936"], ["updated_at", "2015-04-23 21:21:48.754936"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-27@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Quincy"], ["last_name", "Kunze"], ["email", "user-27@example.com"], ["password_digest", "$2a$10$HATj2Y4aUvWyQbIgPUrLpeH1qYG5dkZcG1cs1HvGuaMIrlyknSbum"], ["created_at", "2015-04-23 21:21:48.829446"], ["updated_at", "2015-04-23 21:21:48.829446"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-28@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Charley"], ["last_name", "Kemmer"], ["email", "user-28@example.com"], ["password_digest", "$2a$10$NiMh9OgX/2hR3hd0Yd.YFOfMpgNHD2oxvXpH3hVy3gEjy1acDlRnm"], ["created_at", "2015-04-23 21:21:48.912417"], ["updated_at", "2015-04-23 21:21:48.912417"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-29@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Mariela"], ["last_name", "Bashirian"], ["email", "user-29@example.com"], ["password_digest", "$2a$10$fUOGZ4snkPJD5Ve360PPJ.huku/.KH4SBixVfjRrsWN3HtqB18zdC"], ["created_at", "2015-04-23 21:21:48.988196"], ["updated_at", "2015-04-23 21:21:48.988196"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-30@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Jerry"], ["last_name", "Marvin"], ["email", "user-30@example.com"], ["password_digest", "$2a$10$H6NxK92a7jyJ80/1qIv4.OktmXcdRBVAQ9N/5qGXTu5oXFu1pBK9m"], ["created_at", "2015-04-23 21:21:49.069851"], ["updated_at", "2015-04-23 21:21:49.069851"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-31@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Karlee"], ["last_name", "Nikolaus"], ["email", "user-31@example.com"], ["password_digest", "$2a$10$ZD0CYaHj.OH91kCUlL.dRuLGlE2AhPoM/I2kmZ.LGj2ikjrU16zhC"], ["created_at", "2015-04-23 21:21:49.159030"], ["updated_at", "2015-04-23 21:21:49.159030"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-32@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Demetris"], ["last_name", "Pollich"], ["email", "user-32@example.com"], ["password_digest", "$2a$10$/hxvAD1GE0oqyGNleCkcmOjnNbhU9zGZ3aZJQVqRqGRSAdelhaG3O"], ["created_at", "2015-04-23 21:21:49.233618"], ["updated_at", "2015-04-23 21:21:49.233618"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-33@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Bettie"], ["last_name", "Ankunding"], ["email", "user-33@example.com"], ["password_digest", "$2a$10$8vgkUbak/1d3Gga0t5rdkOL540YYg2rkrw3MI2vPvMCqLg9ldUHUy"], ["created_at", "2015-04-23 21:21:49.309925"], ["updated_at", "2015-04-23 21:21:49.309925"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-34@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Delpha"], ["last_name", "Glover"], ["email", "user-34@example.com"], ["password_digest", "$2a$10$0XX/4DvWcVZtHYGmbDbdsefCswby4MPkZfMGfCnnWeCJ2YD5PvxfG"], ["created_at", "2015-04-23 21:21:49.396531"], ["updated_at", "2015-04-23 21:21:49.396531"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-35@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Adam"], ["last_name", "D'Amore"], ["email", "user-35@example.com"], ["password_digest", "$2a$10$uXtP94TaIPw5k7dDPa1vL.a/68v5Bg9fELC9e/y.0AWsejVlP72kW"], ["created_at", "2015-04-23 21:21:49.476142"], ["updated_at", "2015-04-23 21:21:49.476142"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-36@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Barbara"], ["last_name", "Lowe"], ["email", "user-36@example.com"], ["password_digest", "$2a$10$rmD/z.Ts7hoYw6KXVQcqMuXfgsJ.wZCIbXErGSWmsBophK0Rgc0qq"], ["created_at", "2015-04-23 21:21:49.552047"], ["updated_at", "2015-04-23 21:21:49.552047"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-37@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Betsy"], ["last_name", "Gutkowski"], ["email", "user-37@example.com"], ["password_digest", "$2a$10$7ZhMfdRuJxZyd8ZlD7UKX.BvkwO2I20j72rq1pvRS026NfXGspZgq"], ["created_at", "2015-04-23 21:21:49.638108"], ["updated_at", "2015-04-23 21:21:49.638108"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-38@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Doug"], ["last_name", "Runolfsson"], ["email", "user-38@example.com"], ["password_digest", "$2a$10$4sMT72yUHrAi/.sGTJ8LPOyUo19E34IxGOvn1JkevvgihrFzC..XS"], ["created_at", "2015-04-23 21:21:49.712931"], ["updated_at", "2015-04-23 21:21:49.712931"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-39@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Jazlyn"], ["last_name", "Botsford"], ["email", "user-39@example.com"], ["password_digest", "$2a$10$nFFKVnc/bMDvNWI.tzjboO29ATl126wKaP1t3A4Nn9v42tpHbGxjK"], ["created_at", "2015-04-23 21:21:49.794824"], ["updated_at", "2015-04-23 21:21:49.794824"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-40@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Loren"], ["last_name", "Klocko"], ["email", "user-40@example.com"], ["password_digest", "$2a$10$5gmZOFLdRdB0c9uALzvAdeXFz7bxaH0I4akvFBiJ2WMhf1xwwm2HW"], ["created_at", "2015-04-23 21:21:49.878780"], ["updated_at", "2015-04-23 21:21:49.878780"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-41@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Velma"], ["last_name", "Schmitt"], ["email", "user-41@example.com"], ["password_digest", "$2a$10$LkZBafWe346brW1Pngyj6.4AMxVBJBj1zjQo34LTf12nTo53QP39q"], ["created_at", "2015-04-23 21:21:49.960238"], ["updated_at", "2015-04-23 21:21:49.960238"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-42@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Richard"], ["last_name", "Balistreri"], ["email", "user-42@example.com"], ["password_digest", "$2a$10$lKzxBWmf99TKYF92iRaWrOiXvsJ1AgAFmLH8.QoKZq.S6J8UjIKdy"], ["created_at", "2015-04-23 21:21:50.053229"], ["updated_at", "2015-04-23 21:21:50.053229"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-43@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Zoe"], ["last_name", "Ziemann"], ["email", "user-43@example.com"], ["password_digest", "$2a$10$xpxyADXyp1o9XfvVwOB7h.u3H.HOjB3shPHKmJxvHSAZidBO4m8vq"], ["created_at", "2015-04-23 21:21:50.127178"], ["updated_at", "2015-04-23 21:21:50.127178"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-44@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Orion"], ["last_name", "Rice"], ["email", "user-44@example.com"], ["password_digest", "$2a$10$/VwMLV2wbTdcCyd.la2fdu5D6uJTIpouF6UfgTy.O3.z38.spMq1i"], ["created_at", "2015-04-23 21:21:50.205376"], ["updated_at", "2015-04-23 21:21:50.205376"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-45@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Wilfrid"], ["last_name", "Corkery"], ["email", "user-45@example.com"], ["password_digest", "$2a$10$YQHAfMarnfIiDgxQvbdM8.saqx6YBgqHbBRyI.Fjpq9BJz6zdQwly"], ["created_at", "2015-04-23 21:21:50.279056"], ["updated_at", "2015-04-23 21:21:50.279056"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-46@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Raoul"], ["last_name", "Maggio"], ["email", "user-46@example.com"], ["password_digest", "$2a$10$emh0GwLkX2KgQ8TGO/BBkeXlcL2ovmXdA7S1xSwRwaXWjmFR2FtB."], ["created_at", "2015-04-23 21:21:50.360283"], ["updated_at", "2015-04-23 21:21:50.360283"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-47@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Fabiola"], ["last_name", "Ondricka"], ["email", "user-47@example.com"], ["password_digest", "$2a$10$qZFI0xst.3kicHSdjC0kTeq/2vcz7OTtm8M/XuvBU0LRUw0ltSmBG"], ["created_at", "2015-04-23 21:21:50.439168"], ["updated_at", "2015-04-23 21:21:50.439168"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-48@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Kariane"], ["last_name", "Cole"], ["email", "user-48@example.com"], ["password_digest", "$2a$10$QElBoh.TFr8rDaE3xDHUJu4RJPHYISlv/xjAS10Y0ImipQRXwzYyy"], ["created_at", "2015-04-23 21:21:50.521966"], ["updated_at", "2015-04-23 21:21:50.521966"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-49@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Verla"], ["last_name", "Ondricka"], ["email", "user-49@example.com"], ["password_digest", "$2a$10$tRrew/gpSAPdHg4Jg8A61uHCEp4JBmD.y6bBKbQ5BZRIbqtfm4c2q"], ["created_at", "2015-04-23 21:21:50.590642"], ["updated_at", "2015-04-23 21:21:50.590642"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-50@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Elliot"], ["last_name", "Hahn"], ["email", "user-50@example.com"], ["password_digest", "$2a$10$isP5RddLMsy0kH62hf947O66yXXvfN8ojQTUOGmf4aYN1An.oCGS."], ["created_at", "2015-04-23 21:21:50.664385"], ["updated_at", "2015-04-23 21:21:50.664385"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-51@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Aaron"], ["last_name", "Howell"], ["email", "user-51@example.com"], ["password_digest", "$2a$10$z2GtOYkqG5KhqquU3osx0enKgej/yFRxb.hFWhV5c6CcAMQ1yx4Su"], ["created_at", "2015-04-23 21:21:50.740256"], ["updated_at", "2015-04-23 21:21:50.740256"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-52@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Augustus"], ["last_name", "Heaney"], ["email", "user-52@example.com"], ["password_digest", "$2a$10$P3fZrYL3xMigGIqA0fbNB.4tROlyTQOu.G.EE459VnqDFH/wRmolG"], ["created_at", "2015-04-23 21:21:50.824502"], ["updated_at", "2015-04-23 21:21:50.824502"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-53@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Kristoffer"], ["last_name", "Hickle"], ["email", "user-53@example.com"], ["password_digest", "$2a$10$3vJjkWC3pQDwOBE4bj57GuzRmKtmBxcO52bBTPfZb46PrxVi6eBVS"], ["created_at", "2015-04-23 21:21:50.909743"], ["updated_at", "2015-04-23 21:21:50.909743"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-54@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Jayne"], ["last_name", "Oberbrunner"], ["email", "user-54@example.com"], ["password_digest", "$2a$10$A6Vu5PpQgwjb6ooPbNpgF.rI7g7P6rMNccCRY1njE9r94yiR6iTlK"], ["created_at", "2015-04-23 21:21:50.977869"], ["updated_at", "2015-04-23 21:21:50.977869"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-55@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Jackson"], ["last_name", "Emmerich"], ["email", "user-55@example.com"], ["password_digest", "$2a$10$Bith5hRkVp6qhSpgUaIW8uWCmNAO1.9mSraYItprAUtb40twtc/Vu"], ["created_at", "2015-04-23 21:21:51.054728"], ["updated_at", "2015-04-23 21:21:51.054728"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-56@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Orin"], ["last_name", "Dooley"], ["email", "user-56@example.com"], ["password_digest", "$2a$10$SHasALP0gTyxe2jddSZ.KOgP8tkMw7gqKaMvZ1SL3e.QOTFb8ZQFS"], ["created_at", "2015-04-23 21:21:51.141363"], ["updated_at", "2015-04-23 21:21:51.141363"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-57@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Mitchell"], ["last_name", "Smith"], ["email", "user-57@example.com"], ["password_digest", "$2a$10$cUMlPEnJNXyyhaew591ZP.6nlxSF3GFMc/hiLwYCd0OYsXD0JsmJG"], ["created_at", "2015-04-23 21:21:51.214975"], ["updated_at", "2015-04-23 21:21:51.214975"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-58@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Dakota"], ["last_name", "Ullrich"], ["email", "user-58@example.com"], ["password_digest", "$2a$10$TNlrvHvzNwiwtxmiC0DxeuaerN6JdlWMTguj3/ulz4kHayf/O/Eh2"], ["created_at", "2015-04-23 21:21:51.290226"], ["updated_at", "2015-04-23 21:21:51.290226"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-59@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Jaydon"], ["last_name", "McLaughlin"], ["email", "user-59@example.com"], ["password_digest", "$2a$10$RldBi0UIPxWDItgLgRGlauKDBwAXo8qfrup/4f4xC0vZrFCQtwGQO"], ["created_at", "2015-04-23 21:21:51.369030"], ["updated_at", "2015-04-23 21:21:51.369030"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-60@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Reymundo"], ["last_name", "Gerhold"], ["email", "user-60@example.com"], ["password_digest", "$2a$10$4uqtPISKSWBxV8C1/vdQxuw5XIz0mZuxVonTiCv5HxnaTrJELy22e"], ["created_at", "2015-04-23 21:21:51.458713"], ["updated_at", "2015-04-23 21:21:51.458713"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-61@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Yasmeen"], ["last_name", "Hills"], ["email", "user-61@example.com"], ["password_digest", "$2a$10$mcliSELapEPoZ6SxqriRie5fxnCwze7L2moZQd3pKgShK5oNCciay"], ["created_at", "2015-04-23 21:21:51.541610"], ["updated_at", "2015-04-23 21:21:51.541610"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-62@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Talon"], ["last_name", "Shields"], ["email", "user-62@example.com"], ["password_digest", "$2a$10$3OCAE0ODs2QJeaPiNvLJCeXTpOnSOsEcesuhL3g0kTpLuseCnRdVe"], ["created_at", "2015-04-23 21:21:51.632303"], ["updated_at", "2015-04-23 21:21:51.632303"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-63@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Jerome"], ["last_name", "Brakus"], ["email", "user-63@example.com"], ["password_digest", "$2a$10$CEFMP0rKL7IN58zQS9nDqOY4h4CXrc6mGZzuUDwVnO76i9P4q1N42"], ["created_at", "2015-04-23 21:21:51.701807"], ["updated_at", "2015-04-23 21:21:51.701807"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-64@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Francisca"], ["last_name", "Auer"], ["email", "user-64@example.com"], ["password_digest", "$2a$10$mzP7mdLAqCTbtTLexCPPZe71BzcNkkjm5Nsnxo.firQR3qWO93SfG"], ["created_at", "2015-04-23 21:21:51.785088"], ["updated_at", "2015-04-23 21:21:51.785088"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-65@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Maria"], ["last_name", "O'Keefe"], ["email", "user-65@example.com"], ["password_digest", "$2a$10$YySrpIFlBThkUV8f7QzHU.y54K5T1pM9qHrnJQ1/.XLXQoNbpSEfm"], ["created_at", "2015-04-23 21:21:51.868493"], ["updated_at", "2015-04-23 21:21:51.868493"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-66@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Gretchen"], ["last_name", "Smith"], ["email", "user-66@example.com"], ["password_digest", "$2a$10$3sqyYLTANlq1ChI5NtA2beR70mCiPzsV1PYeOzl5Vm.yQ9FUuM5LO"], ["created_at", "2015-04-23 21:21:51.935996"], ["updated_at", "2015-04-23 21:21:51.935996"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-67@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Austin"], ["last_name", "Leuschke"], ["email", "user-67@example.com"], ["password_digest", "$2a$10$8FaABHF2Ah.CWKvxsaoeuu/t4wmnY68GBChiOdLqQ1ZpxDAk4n9wm"], ["created_at", "2015-04-23 21:21:52.012065"], ["updated_at", "2015-04-23 21:21:52.012065"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-68@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Marcia"], ["last_name", "Dietrich"], ["email", "user-68@example.com"], ["password_digest", "$2a$10$8w9hIkgktroCea9woG2hKO/udHK3jF7t5td2HFapW2Obfsz9zaBJO"], ["created_at", "2015-04-23 21:21:52.096895"], ["updated_at", "2015-04-23 21:21:52.096895"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-69@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Berniece"], ["last_name", "Von"], ["email", "user-69@example.com"], ["password_digest", "$2a$10$Vh6vETvIdS7dE3UgnfJt5./EasNhIE5AaoAwlv5nXrYpz8epV4krS"], ["created_at", "2015-04-23 21:21:52.171254"], ["updated_at", "2015-04-23 21:21:52.171254"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-70@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Maida"], ["last_name", "Boehm"], ["email", "user-70@example.com"], ["password_digest", "$2a$10$gCskop0jq1TrXwtPz/jNSez7szsOh/vtL2bMj7x5C0HKUkZv4ASBK"], ["created_at", "2015-04-23 21:21:52.249941"], ["updated_at", "2015-04-23 21:21:52.249941"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-71@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Shaylee"], ["last_name", "Roberts"], ["email", "user-71@example.com"], ["password_digest", "$2a$10$/qUFvop4fWC7tVcq7m8kguQm662ejD7fzZlWRNxMWGe3UcoAp/wCe"], ["created_at", "2015-04-23 21:21:52.323260"], ["updated_at", "2015-04-23 21:21:52.323260"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-72@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "June"], ["last_name", "Schultz"], ["email", "user-72@example.com"], ["password_digest", "$2a$10$nxaTdUoGsIisPo4dboQ0lext0aEUDvHpkkmSVhMs3.ytNXuEYvTVS"], ["created_at", "2015-04-23 21:21:52.412104"], ["updated_at", "2015-04-23 21:21:52.412104"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-73@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Ron"], ["last_name", "Bogisich"], ["email", "user-73@example.com"], ["password_digest", "$2a$10$apjiKkAAcG0DKicJc4N.fexGcUyWGWL/soV5OF9KuhW4.9seAQtSa"], ["created_at", "2015-04-23 21:21:52.489773"], ["updated_at", "2015-04-23 21:21:52.489773"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-74@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Ima"], ["last_name", "Fadel"], ["email", "user-74@example.com"], ["password_digest", "$2a$10$iGxg5hJwjlyC1hiPC5fmTudJF2akXUhxjd1RcNKLdirLaGksUWsci"], ["created_at", "2015-04-23 21:21:52.573877"], ["updated_at", "2015-04-23 21:21:52.573877"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-75@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Jasper"], ["last_name", "Mills"], ["email", "user-75@example.com"], ["password_digest", "$2a$10$iKOMh/jRYY6mQdzZlin1b.06RtAcCR5exDS6MRH9FjJygKAlww.7W"], ["created_at", "2015-04-23 21:21:52.657302"], ["updated_at", "2015-04-23 21:21:52.657302"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-76@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Clemens"], ["last_name", "Kuphal"], ["email", "user-76@example.com"], ["password_digest", "$2a$10$Yy0L0MEx.QmhYbyg2GOlE.62gcoPp3ZiRmdfAcpHvjXJTYwmttyIC"], ["created_at", "2015-04-23 21:21:52.736481"], ["updated_at", "2015-04-23 21:21:52.736481"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-77@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Chelsea"], ["last_name", "DuBuque"], ["email", "user-77@example.com"], ["password_digest", "$2a$10$7WX8jUxFSty6.6Ie4foIueuZianp6O.tMVMUnLqYslnE9.sTDdQkK"], ["created_at", "2015-04-23 21:21:52.810398"], ["updated_at", "2015-04-23 21:21:52.810398"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-78@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Evangeline"], ["last_name", "Emmerich"], ["email", "user-78@example.com"], ["password_digest", "$2a$10$uCGQU6APkPu512L/Bw7QxuLA1XXEhzmRoENBBu8pfeFmy1ZhpDxay"], ["created_at", "2015-04-23 21:21:52.887805"], ["updated_at", "2015-04-23 21:21:52.887805"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-79@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Paula"], ["last_name", "Schowalter"], ["email", "user-79@example.com"], ["password_digest", "$2a$10$6V5nKI95HELHw43uxDvKD.oeYAh1ILVekGLQO7LI3xU5j6MP1RO3G"], ["created_at", "2015-04-23 21:21:52.965289"], ["updated_at", "2015-04-23 21:21:52.965289"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-80@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Angus"], ["last_name", "Daniel"], ["email", "user-80@example.com"], ["password_digest", "$2a$10$0PD3MFngNhVs.DOveyZwc.NXX5YoBwJMrzXYicFBiZ/nXYNZIZ3OW"], ["created_at", "2015-04-23 21:21:53.037351"], ["updated_at", "2015-04-23 21:21:53.037351"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-81@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Shannon"], ["last_name", "Halvorson"], ["email", "user-81@example.com"], ["password_digest", "$2a$10$odM3bZNX8cb9pUjjKcwHYuogOGqADhBahGI203r3qb8i29rFUbgsS"], ["created_at", "2015-04-23 21:21:53.115761"], ["updated_at", "2015-04-23 21:21:53.115761"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-82@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Wilfredo"], ["last_name", "Hegmann"], ["email", "user-82@example.com"], ["password_digest", "$2a$10$UVcQyFQrojhQPtn54VSTQ.7VwTRgO8YxnvAMUNo7pBtu7cjoiYJKm"], ["created_at", "2015-04-23 21:21:53.202926"], ["updated_at", "2015-04-23 21:21:53.202926"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-83@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Marielle"], ["last_name", "Kassulke"], ["email", "user-83@example.com"], ["password_digest", "$2a$10$Hk2b7FuJZHu7.sxRa4y.deUsTVxhFZe.OkrWbn8.Femg/UwjNOcSC"], ["created_at", "2015-04-23 21:21:53.279268"], ["updated_at", "2015-04-23 21:21:53.279268"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-84@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Barbara"], ["last_name", "Kihn"], ["email", "user-84@example.com"], ["password_digest", "$2a$10$NocLJ/EpVzpcFmMlZ21.mu5Se/BssgqZXSzuNYEqmTCpWNA6iCCeK"], ["created_at", "2015-04-23 21:21:53.355807"], ["updated_at", "2015-04-23 21:21:53.355807"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-85@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Reece"], ["last_name", "Klein"], ["email", "user-85@example.com"], ["password_digest", "$2a$10$at6PK/LF8.SZ3WXkj9tvkusglbe0kuVMUVQq.yvzXK1v5T5vKqyzm"], ["created_at", "2015-04-23 21:21:53.432230"], ["updated_at", "2015-04-23 21:21:53.432230"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-86@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Karl"], ["last_name", "Runte"], ["email", "user-86@example.com"], ["password_digest", "$2a$10$vDFM0DqiwM9X7Jb9EO3N6.yhnDEJMb3ntblelmDkzkriHUbSK/J1y"], ["created_at", "2015-04-23 21:21:53.514104"], ["updated_at", "2015-04-23 21:21:53.514104"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-87@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Kasey"], ["last_name", "Kulas"], ["email", "user-87@example.com"], ["password_digest", "$2a$10$fFqowroAILAXxsux3GLcFe6Bxu0UpPCM/.Mb95dvdUQqQe.vGzrna"], ["created_at", "2015-04-23 21:21:53.591974"], ["updated_at", "2015-04-23 21:21:53.591974"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-88@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Earlene"], ["last_name", "McGlynn"], ["email", "user-88@example.com"], ["password_digest", "$2a$10$cDo3PluKbWNJHqY3TOJmwOE.fJNn2UcHAIAkWuzyfwl.ppKHExxUS"], ["created_at", "2015-04-23 21:21:53.673491"], ["updated_at", "2015-04-23 21:21:53.673491"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-89@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Leonora"], ["last_name", "Kuphal"], ["email", "user-89@example.com"], ["password_digest", "$2a$10$VkS2oVc6no1abYr/s1ouOu2bKkb0ruNF11H/ttWVjFpBhfZ6k5vUK"], ["created_at", "2015-04-23 21:21:53.750197"], ["updated_at", "2015-04-23 21:21:53.750197"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-90@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Jaden"], ["last_name", "Kuhn"], ["email", "user-90@example.com"], ["password_digest", "$2a$10$JnGJ3Szi8c8huVcTi5lBBuh1zNSh0XrEhpmULaoRFGOjsWxyjXMvS"], ["created_at", "2015-04-23 21:21:53.833591"], ["updated_at", "2015-04-23 21:21:53.833591"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-91@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Cassandre"], ["last_name", "Bogan"], ["email", "user-91@example.com"], ["password_digest", "$2a$10$bOf45K6xtlZRQ3q2JORy..fZADKEkhtE0JWDh1wV6umj0im6H.twe"], ["created_at", "2015-04-23 21:21:53.917438"], ["updated_at", "2015-04-23 21:21:53.917438"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-92@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Lilian"], ["last_name", "Abshire"], ["email", "user-92@example.com"], ["password_digest", "$2a$10$NDWi1GK8xybCfROucB133ORS1pNXU2p7bitqLtasgw3sYhmH06RiW"], ["created_at", "2015-04-23 21:21:53.995316"], ["updated_at", "2015-04-23 21:21:53.995316"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-93@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Manley"], ["last_name", "Schmidt"], ["email", "user-93@example.com"], ["password_digest", "$2a$10$c/NbZOyMNChTm/qbRBbsTOf2iPK6049jwZWyFpgpo5kcbg4dDoaI6"], ["created_at", "2015-04-23 21:21:54.075238"], ["updated_at", "2015-04-23 21:21:54.075238"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-94@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Marge"], ["last_name", "Beer"], ["email", "user-94@example.com"], ["password_digest", "$2a$10$as3/SsNmeyiB2qJucNZ9geTHuAQfgZJd16XFoEADgeDhIoLEFeotG"], ["created_at", "2015-04-23 21:21:54.158989"], ["updated_at", "2015-04-23 21:21:54.158989"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-95@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Alden"], ["last_name", "Kiehn"], ["email", "user-95@example.com"], ["password_digest", "$2a$10$NuTh4afFT9/RM4WL9QwkkO.AyX51DX7nSuigptoqbMIfkMMysH5jO"], ["created_at", "2015-04-23 21:21:54.231035"], ["updated_at", "2015-04-23 21:21:54.231035"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-96@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Brendan"], ["last_name", "Rogahn"], ["email", "user-96@example.com"], ["password_digest", "$2a$10$9L.uDDB0b0JB863OLXGQN.iJm3.njGnqpIr956l4STzRgfoTyYbAS"], ["created_at", "2015-04-23 21:21:54.319231"], ["updated_at", "2015-04-23 21:21:54.319231"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-97@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Shane"], ["last_name", "Kuhn"], ["email", "user-97@example.com"], ["password_digest", "$2a$10$MADBQQCLclvjOEM/hnl0DuPyoOXgG3rebfSqCLC/P.KOISN9AviWi"], ["created_at", "2015-04-23 21:21:54.395470"], ["updated_at", "2015-04-23 21:21:54.395470"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-98@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Annamae"], ["last_name", "Blick"], ["email", "user-98@example.com"], ["password_digest", "$2a$10$y3y8omwfjUToZV2TwoTHjeA.0LEc7wE0NPgzKkSl8/YAfrK93BRhG"], ["created_at", "2015-04-23 21:21:54.476501"], ["updated_at", "2015-04-23 21:21:54.476501"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-99@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Hettie"], ["last_name", "Vandervort"], ["email", "user-99@example.com"], ["password_digest", "$2a$10$rOpm4FIQ4x1Nd9IxEdSqLunnXHnf.B3Lgg89F.taQZKiUJMye30HW"], ["created_at", "2015-04-23 21:21:54.565182"], ["updated_at", "2015-04-23 21:21:54.565182"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for ::1 at 2015-04-23 16:25:07 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (17.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 151ms (Views: 142.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-04-23 16:25:08 -0500
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-04-23 16:25:08 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-04-23 16:25:08 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-04-23 16:25:08 -0500
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-04-23 16:25:08 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-04-23 16:25:08 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-04-23 16:25:08 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-04-23 16:25:08 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-04-23 16:25:08 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-04-23 16:25:08 -0500
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-04-23 16:25:08 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-04-23 16:25:08 -0500
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-04-23 16:25:08 -0500
+
+
+Started GET "/assets/rails.png" for ::1 at 2015-04-23 16:25:08 -0500
+
+
+Started GET "/users" for ::1 at 2015-04-23 16:25:10 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 90ms (Views: 88.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-24 09:22:27 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (21.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 248ms (Views: 237.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-04-24 09:22:28 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-04-24 09:22:28 -0500
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-04-24 09:22:28 -0500
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-04-24 09:22:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-04-24 09:22:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-04-24 09:22:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-04-24 09:22:28 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-04-24 09:22:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-04-24 09:22:28 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-04-24 09:22:28 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-04-24 09:22:28 -0500
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-04-24 09:22:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-04-24 09:22:28 -0500
+
+
+Started GET "/assets/rails.png" for ::1 at 2015-04-24 09:22:28 -0500
+
+
+Started GET "/users" for ::1 at 2015-04-24 09:22:30 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (235.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 352ms (Views: 348.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users?page=2" for ::1 at 2015-04-24 09:22:36 -0500
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" LIMIT 30 OFFSET 30
+  Rendered users/index.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 92ms (Views: 89.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users?page=3" for ::1 at 2015-04-24 09:22:41 -0500
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 30 OFFSET 60[0m
+  Rendered users/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 110ms (Views: 108.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users?page=4" for ::1 at 2015-04-24 09:22:46 -0500
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" LIMIT 30 OFFSET 90
+  Rendered users/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 80ms (Views: 79.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users?page=1" for ::1 at 2015-04-24 09:22:49 -0500
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 107ms (Views: 105.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users?page=2" for ::1 at 2015-04-24 09:22:51 -0500
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" LIMIT 30 OFFSET 30
+  Rendered users/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 92ms (Views: 90.9ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAdminToUsers (20150424144502)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "admin" boolean DEFAULT 'f'[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150424144502"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20150420162621)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150420162621"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to AddIndexToUsersEmail (20150420173223)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150420173223"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to AddPasswordDigestToUsers (20150420192205)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "users" ADD "password_digest" varchar
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150420192205"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to AddRememberDigestToUsers (20150422192249)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "remember_digest" varchar
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150422192249"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to AddAdminToUsers (20150424144502)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "admin" boolean DEFAULT 'f'
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150424144502"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "admin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["first_name", "Example"], ["last_name", "User"], ["email", "user@example.com"], ["password_digest", "$2a$10$GCGp4wSXkrgY5rvMEqnETOERSq1Xaw92IWfEMtBTOkhMjNfspB1Ca"], ["admin", "t"], ["created_at", "2015-04-24 14:47:51.328769"], ["updated_at", "2015-04-24 14:47:51.328769"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-1@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Garret"], ["last_name", "Ruecker"], ["email", "user-1@example.com"], ["password_digest", "$2a$10$kzCMmI4LDyFzGlek4G/sweDrMki0nhv2mx3a9ZVSQXVIih.VdV7Yu"], ["created_at", "2015-04-24 14:47:51.616603"], ["updated_at", "2015-04-24 14:47:51.616603"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-2@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Miles"], ["last_name", "Hickle"], ["email", "user-2@example.com"], ["password_digest", "$2a$10$u7can9RmXc0k7qt09rd57.v3vzzez6Hobmzph0XS9TvwQu0HwEyTu"], ["created_at", "2015-04-24 14:47:51.695490"], ["updated_at", "2015-04-24 14:47:51.695490"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-3@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Rebeka"], ["last_name", "Tremblay"], ["email", "user-3@example.com"], ["password_digest", "$2a$10$DCbyAeNXfxQXLkxTDqpTbeSHHDdWDzg0yHrFm0/Z7.joSMbzC3j3O"], ["created_at", "2015-04-24 14:47:51.770180"], ["updated_at", "2015-04-24 14:47:51.770180"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-4@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Johnny"], ["last_name", "Cormier"], ["email", "user-4@example.com"], ["password_digest", "$2a$10$W5sOBvNQexACndTGKwXJ.Og.ZDCKOIzBlZZLJJRBHNzh6pvaMCyae"], ["created_at", "2015-04-24 14:47:51.842448"], ["updated_at", "2015-04-24 14:47:51.842448"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-5@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Emerson"], ["last_name", "Emard"], ["email", "user-5@example.com"], ["password_digest", "$2a$10$cpqaxH1t0fjQnUCk4l9sl.6YR70J7d7GxHMUiRGR1gwIrYm/ysuAm"], ["created_at", "2015-04-24 14:47:51.911586"], ["updated_at", "2015-04-24 14:47:51.911586"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-6@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Delilah"], ["last_name", "Lemke"], ["email", "user-6@example.com"], ["password_digest", "$2a$10$cPTKHgv.4uymfFu.GaNeMeT0Q17a4bcTLQSp103sk9vObRy0pvVuy"], ["created_at", "2015-04-24 14:47:51.984065"], ["updated_at", "2015-04-24 14:47:51.984065"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-7@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Talia"], ["last_name", "Haag"], ["email", "user-7@example.com"], ["password_digest", "$2a$10$owPrYSEytfPreVa2iCn0s.j.osSMlpch2PlWcE37qQCaUB5dQx31a"], ["created_at", "2015-04-24 14:47:52.060795"], ["updated_at", "2015-04-24 14:47:52.060795"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-8@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Elody"], ["last_name", "Schumm"], ["email", "user-8@example.com"], ["password_digest", "$2a$10$V0bU6z19DBZz3Cu5GDqcMei1qAHjc..G.2sIIHwlatikkYpPTvo/e"], ["created_at", "2015-04-24 14:47:52.130189"], ["updated_at", "2015-04-24 14:47:52.130189"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-9@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Renee"], ["last_name", "Schneider"], ["email", "user-9@example.com"], ["password_digest", "$2a$10$JwfnBLPj7J9/QoWGoVuJe.EEsevgWxXEBSr8g92tT1LYH2lrrTA1S"], ["created_at", "2015-04-24 14:47:52.205173"], ["updated_at", "2015-04-24 14:47:52.205173"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-10@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Rhoda"], ["last_name", "Olson"], ["email", "user-10@example.com"], ["password_digest", "$2a$10$LU47Za8QTZCR4iyxKpR/RuezHSnXC9f0IQrEvWZxs/BGwZhmKVm6S"], ["created_at", "2015-04-24 14:47:52.277423"], ["updated_at", "2015-04-24 14:47:52.277423"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-11@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Christopher"], ["last_name", "Hackett"], ["email", "user-11@example.com"], ["password_digest", "$2a$10$rRrrBnW0kz..l6ntDAsS0Ok.ieilYlLUQBQCg/3oSnhBPR5DI7Eye"], ["created_at", "2015-04-24 14:47:52.350119"], ["updated_at", "2015-04-24 14:47:52.350119"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-12@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Abbie"], ["last_name", "Schaden"], ["email", "user-12@example.com"], ["password_digest", "$2a$10$HvA6lPEd/rwmwUCWCRCcBORLnl1fe/ObeCHiQB87Fa2sjiQgHUMXa"], ["created_at", "2015-04-24 14:47:52.426814"], ["updated_at", "2015-04-24 14:47:52.426814"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-13@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Tierra"], ["last_name", "Prosacco"], ["email", "user-13@example.com"], ["password_digest", "$2a$10$JMBvg7dilEher9KBYcXQvOw129SdXJUhVe.a8uWoE7XZof82jDqwq"], ["created_at", "2015-04-24 14:47:52.503158"], ["updated_at", "2015-04-24 14:47:52.503158"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-14@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Lisandro"], ["last_name", "Mills"], ["email", "user-14@example.com"], ["password_digest", "$2a$10$oHEK89KdcYk8ot.hoxt3d.cGnr9T.Cs0rezUug71kN.wW9pE2wV/y"], ["created_at", "2015-04-24 14:47:52.570728"], ["updated_at", "2015-04-24 14:47:52.570728"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-15@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Gus"], ["last_name", "Hegmann"], ["email", "user-15@example.com"], ["password_digest", "$2a$10$xI1Dxyn7lSyDfiSCIeyd7eFneVXBZMayHJ2CX6a46FmO6dkaC633m"], ["created_at", "2015-04-24 14:47:52.643006"], ["updated_at", "2015-04-24 14:47:52.643006"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-16@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Bridgette"], ["last_name", "Ondricka"], ["email", "user-16@example.com"], ["password_digest", "$2a$10$wVKyiASZr1pKkpzVvIk8ae5Yojn2rBThUIYIYyfsHEfbkTZP1irZi"], ["created_at", "2015-04-24 14:47:52.710515"], ["updated_at", "2015-04-24 14:47:52.710515"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-17@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Herman"], ["last_name", "Cormier"], ["email", "user-17@example.com"], ["password_digest", "$2a$10$IOIAOs5SIDTVPLx6ZoWqJ.eMmcGfwsjUB6Gw.uUHjB5n1DAUB57oy"], ["created_at", "2015-04-24 14:47:52.779942"], ["updated_at", "2015-04-24 14:47:52.779942"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-18@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Cary"], ["last_name", "Blick"], ["email", "user-18@example.com"], ["password_digest", "$2a$10$6u6uff/uyMi9Piaz.bmfNODq/XfJo5yQBjFxSHnD9twfM1X2i6S1i"], ["created_at", "2015-04-24 14:47:52.854200"], ["updated_at", "2015-04-24 14:47:52.854200"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-19@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Emilie"], ["last_name", "Zboncak"], ["email", "user-19@example.com"], ["password_digest", "$2a$10$8VI2Rez3SroYOrwyYczqreMoU59.mUUDozE7aXCKoxZx7DtUSZQAu"], ["created_at", "2015-04-24 14:47:52.921696"], ["updated_at", "2015-04-24 14:47:52.921696"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-20@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Maxime"], ["last_name", "Raynor"], ["email", "user-20@example.com"], ["password_digest", "$2a$10$RMvWwSDJv0hwPY/PLH6ZDu5F5g3MdoogUV4NTz8AJUDD0DGfchs6y"], ["created_at", "2015-04-24 14:47:52.989284"], ["updated_at", "2015-04-24 14:47:52.989284"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-21@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Sven"], ["last_name", "Waters"], ["email", "user-21@example.com"], ["password_digest", "$2a$10$0f8wSn.tPONsEEIEHqUiaupa/8lkZW87l9OVjzp4KrAroHtSicLYi"], ["created_at", "2015-04-24 14:47:53.060061"], ["updated_at", "2015-04-24 14:47:53.060061"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-22@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Ottilie"], ["last_name", "Murazik"], ["email", "user-22@example.com"], ["password_digest", "$2a$10$36CtTB8s4akzseB.ahyqOOZkUPt/2iOeHM8qwpoTsET8V.wgvYCvC"], ["created_at", "2015-04-24 14:47:53.128323"], ["updated_at", "2015-04-24 14:47:53.128323"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-23@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Alvina"], ["last_name", "Greenfelder"], ["email", "user-23@example.com"], ["password_digest", "$2a$10$26.SipwdAIQbtwnluFDK/.26AKANmoTi1uhHzazBIhDUF7Y0.A1q6"], ["created_at", "2015-04-24 14:47:53.195512"], ["updated_at", "2015-04-24 14:47:53.195512"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-24@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Alaina"], ["last_name", "Kuhic"], ["email", "user-24@example.com"], ["password_digest", "$2a$10$V1Znxp12M.qFYn8s8iof.uaaDgjaTdUInIJEG7ZE243BUdEq.j4mW"], ["created_at", "2015-04-24 14:47:53.262796"], ["updated_at", "2015-04-24 14:47:53.262796"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-25@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Kaci"], ["last_name", "Renner"], ["email", "user-25@example.com"], ["password_digest", "$2a$10$R/gicn8NSE/ELMbS3VbNQOKXa1nBmepFaZ9/02iWcHhluTFumxxMe"], ["created_at", "2015-04-24 14:47:53.340871"], ["updated_at", "2015-04-24 14:47:53.340871"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-26@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Aileen"], ["last_name", "Breitenberg"], ["email", "user-26@example.com"], ["password_digest", "$2a$10$zBH.iIXHdclCY0YudmkSke7unj3PKT7C9VlC2gFmngZrUiypbWmRC"], ["created_at", "2015-04-24 14:47:53.422898"], ["updated_at", "2015-04-24 14:47:53.422898"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-27@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Heather"], ["last_name", "Ritchie"], ["email", "user-27@example.com"], ["password_digest", "$2a$10$4F.56wqCMBe/dsfbY5rm8.hv.TH6orzXzZRZnmcFyGeeipxnvjf12"], ["created_at", "2015-04-24 14:47:53.495433"], ["updated_at", "2015-04-24 14:47:53.495433"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-28@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Magali"], ["last_name", "West"], ["email", "user-28@example.com"], ["password_digest", "$2a$10$dCsf5APAkHZ2M0tN3gO7iOo5Vgbys89myu3bhEQXcTKD4xOnAvrou"], ["created_at", "2015-04-24 14:47:53.570915"], ["updated_at", "2015-04-24 14:47:53.570915"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-29@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Guadalupe"], ["last_name", "Tromp"], ["email", "user-29@example.com"], ["password_digest", "$2a$10$FcgLWdXG3Gts81zcpVyciuAOF.KFc6oSrQz5KES8dm.Crqplx0yR."], ["created_at", "2015-04-24 14:47:53.645503"], ["updated_at", "2015-04-24 14:47:53.645503"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-30@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Rubie"], ["last_name", "Wilderman"], ["email", "user-30@example.com"], ["password_digest", "$2a$10$fAVzah9sLtxUdyHrJU9dvOx92Jlg6OIcDvcAXeom7UsiPIbojs.o6"], ["created_at", "2015-04-24 14:47:53.719366"], ["updated_at", "2015-04-24 14:47:53.719366"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-31@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Reed"], ["last_name", "Ledner"], ["email", "user-31@example.com"], ["password_digest", "$2a$10$hfwb.SF9ymZgUym2r9CpO.jHr0EFwpeQooxEa44JGrI8x6CsagO1a"], ["created_at", "2015-04-24 14:47:53.788366"], ["updated_at", "2015-04-24 14:47:53.788366"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-32@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Stefan"], ["last_name", "Schiller"], ["email", "user-32@example.com"], ["password_digest", "$2a$10$pta/jPla7MwC0d6RvaztUeaxmW4kNE9YuKwHYFoHBUAxGKkFDSxcm"], ["created_at", "2015-04-24 14:47:53.860871"], ["updated_at", "2015-04-24 14:47:53.860871"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-33@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Faye"], ["last_name", "Hintz"], ["email", "user-33@example.com"], ["password_digest", "$2a$10$tXor4eEHeZzZcpJB8pyH5.kFqnvzfjJ4yFy4VO.fLUrz/Z4mtNp6i"], ["created_at", "2015-04-24 14:47:53.928691"], ["updated_at", "2015-04-24 14:47:53.928691"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-34@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Napoleon"], ["last_name", "Deckow"], ["email", "user-34@example.com"], ["password_digest", "$2a$10$jr5yKruq0ej81LINeMpoUeaVfBTxRYhh5Kf6RgCFsle52b43TRvZG"], ["created_at", "2015-04-24 14:47:53.998324"], ["updated_at", "2015-04-24 14:47:53.998324"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-35@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Terrence"], ["last_name", "Hettinger"], ["email", "user-35@example.com"], ["password_digest", "$2a$10$vQ2SWD68FRWeX2.eQISD4.FzM5u9vuyuXAMwStPMTasuUduRqCQm6"], ["created_at", "2015-04-24 14:47:54.067944"], ["updated_at", "2015-04-24 14:47:54.067944"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-36@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Walter"], ["last_name", "Littel"], ["email", "user-36@example.com"], ["password_digest", "$2a$10$qwuIHFATd/U.19hU3uBD6uJNQJtF/ysDHuQyjg8/BByl8YT.xMpZ6"], ["created_at", "2015-04-24 14:47:54.138848"], ["updated_at", "2015-04-24 14:47:54.138848"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-37@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Adaline"], ["last_name", "Konopelski"], ["email", "user-37@example.com"], ["password_digest", "$2a$10$26umY8eKQpEHQJwT6D5qrOCjy8a3.cBEWDNl83x2xVeLnZRk8NvNm"], ["created_at", "2015-04-24 14:47:54.206549"], ["updated_at", "2015-04-24 14:47:54.206549"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-38@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Jensen"], ["last_name", "Ankunding"], ["email", "user-38@example.com"], ["password_digest", "$2a$10$thXdsViw.i5CiWPfHU59POfjhi7.eGmhP7KmnwaWATXpC8cu4Cowe"], ["created_at", "2015-04-24 14:47:54.278737"], ["updated_at", "2015-04-24 14:47:54.278737"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-39@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Ansley"], ["last_name", "Lakin"], ["email", "user-39@example.com"], ["password_digest", "$2a$10$jl6z.gjbJPANfqVw3zqmkuifZ/HZHEvKKeEvWboUlhuPIEWWwDzqm"], ["created_at", "2015-04-24 14:47:54.355472"], ["updated_at", "2015-04-24 14:47:54.355472"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-40@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Odie"], ["last_name", "Powlowski"], ["email", "user-40@example.com"], ["password_digest", "$2a$10$TwX0Qrt0ltAuZklUk7yU4Ov6pnd3CfCwYVFCyHjsvqA2Y0xXlzRuy"], ["created_at", "2015-04-24 14:47:54.431185"], ["updated_at", "2015-04-24 14:47:54.431185"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-41@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Brain"], ["last_name", "Larson"], ["email", "user-41@example.com"], ["password_digest", "$2a$10$s5CYl6IF/OyohipTBLStB.H0nLn5L3cH1ZtkQGLinCmt2sECQSCka"], ["created_at", "2015-04-24 14:47:54.499153"], ["updated_at", "2015-04-24 14:47:54.499153"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-42@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Bill"], ["last_name", "Gerhold"], ["email", "user-42@example.com"], ["password_digest", "$2a$10$doYu8jfK7LNQgExP31irsOcknc.l/hfYF5GVPHuW/0KKYW9CCUjg2"], ["created_at", "2015-04-24 14:47:54.577391"], ["updated_at", "2015-04-24 14:47:54.577391"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-43@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Monica"], ["last_name", "Herman"], ["email", "user-43@example.com"], ["password_digest", "$2a$10$6/B8H5/MtxUlZ4cZdpsOnOORwXyO2LWQ4PbqnrukWA3G5P2gQOI/6"], ["created_at", "2015-04-24 14:47:54.650309"], ["updated_at", "2015-04-24 14:47:54.650309"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-44@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Timmothy"], ["last_name", "Kirlin"], ["email", "user-44@example.com"], ["password_digest", "$2a$10$r3jHZ57NwZ5P3vpq3T96uu56Ynl5yrlPyFEPSf5XzpTGMn7.DGiQa"], ["created_at", "2015-04-24 14:47:54.719458"], ["updated_at", "2015-04-24 14:47:54.719458"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-45@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Misael"], ["last_name", "Morar"], ["email", "user-45@example.com"], ["password_digest", "$2a$10$iYpN9TYkESD/tlxGenOgkOwn/CYLYk7X1BMFR.ivSIubOqKHeyDkW"], ["created_at", "2015-04-24 14:47:54.787219"], ["updated_at", "2015-04-24 14:47:54.787219"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-46@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Dorris"], ["last_name", "Wolf"], ["email", "user-46@example.com"], ["password_digest", "$2a$10$HyvEz/NYVjJtkelhaWY.O.mI3l.6U/.HCt6.p6Ren8jrqjvsWFg/C"], ["created_at", "2015-04-24 14:47:54.864669"], ["updated_at", "2015-04-24 14:47:54.864669"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-47@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Jakob"], ["last_name", "Larkin"], ["email", "user-47@example.com"], ["password_digest", "$2a$10$kmvzQwsJyP55KnpNsYq3VO1KPs3Zr8CEE7jAMiyEOQswb4tH20Gjy"], ["created_at", "2015-04-24 14:47:54.939397"], ["updated_at", "2015-04-24 14:47:54.939397"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-48@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Garnet"], ["last_name", "McGlynn"], ["email", "user-48@example.com"], ["password_digest", "$2a$10$7yHAkb0Ln.olFuq7vPU.LuVAGB0A.MqTffstGShlkijKAWnI72L9e"], ["created_at", "2015-04-24 14:47:55.006283"], ["updated_at", "2015-04-24 14:47:55.006283"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-49@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Ella"], ["last_name", "Brakus"], ["email", "user-49@example.com"], ["password_digest", "$2a$10$BsI4eaiy4zc9NWiJjEirgOadOUxpbK3MzYFUT54RBqEYGlAt6r7Dy"], ["created_at", "2015-04-24 14:47:55.073337"], ["updated_at", "2015-04-24 14:47:55.073337"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-50@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Cecelia"], ["last_name", "Abernathy"], ["email", "user-50@example.com"], ["password_digest", "$2a$10$bALCUZYTHzkLKXwFE8hq8uGfa3a3Zcvv.DaJl3sYh4uuJDuMTxD8m"], ["created_at", "2015-04-24 14:47:55.145276"], ["updated_at", "2015-04-24 14:47:55.145276"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-51@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Cody"], ["last_name", "Cummings"], ["email", "user-51@example.com"], ["password_digest", "$2a$10$BWdvhD6Nd5KKugX2tJ.I6OqDIto5BbEBLhedbqU9ks0cJv/8n0Ns6"], ["created_at", "2015-04-24 14:47:55.213127"], ["updated_at", "2015-04-24 14:47:55.213127"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-52@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Mackenzie"], ["last_name", "Hartmann"], ["email", "user-52@example.com"], ["password_digest", "$2a$10$w5nloaqAI.7krqGe6JQv4u9857lA7F8iUA6cB/WH.dtqvioXTqYLO"], ["created_at", "2015-04-24 14:47:55.288309"], ["updated_at", "2015-04-24 14:47:55.288309"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-53@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Kiarra"], ["last_name", "Hermiston"], ["email", "user-53@example.com"], ["password_digest", "$2a$10$7PdfOpWslnUgwdfO1CxKVextMRYb7434yVTrEinw2qifiL45r88Xy"], ["created_at", "2015-04-24 14:47:55.368217"], ["updated_at", "2015-04-24 14:47:55.368217"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-54@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Hyman"], ["last_name", "Bogisich"], ["email", "user-54@example.com"], ["password_digest", "$2a$10$unZXwvBJE6E/rBWE/ZrBzeUZzELY0al7azqSYkS7H9rpN8PHIUg0."], ["created_at", "2015-04-24 14:47:55.441907"], ["updated_at", "2015-04-24 14:47:55.441907"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-55@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Mayra"], ["last_name", "Effertz"], ["email", "user-55@example.com"], ["password_digest", "$2a$10$Qgr0Fr5vkV5DtIYVzQw5wO5dFFjAaz9BHQUJ1y4P4DN.ySP1lQO0W"], ["created_at", "2015-04-24 14:47:55.516057"], ["updated_at", "2015-04-24 14:47:55.516057"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-56@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Andreane"], ["last_name", "Wehner"], ["email", "user-56@example.com"], ["password_digest", "$2a$10$m.XpzYZC504KiUyfaFq8e.9z/RqpGf50RnaUzCWjlaEAm56LVZrti"], ["created_at", "2015-04-24 14:47:55.590764"], ["updated_at", "2015-04-24 14:47:55.590764"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-57@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Cara"], ["last_name", "Reilly"], ["email", "user-57@example.com"], ["password_digest", "$2a$10$IbvGV0aFZv5z42aVpatwuuelx6xmaxAMJkQimQ.zyZfTTpgitnSYa"], ["created_at", "2015-04-24 14:47:55.663620"], ["updated_at", "2015-04-24 14:47:55.663620"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-58@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Demarcus"], ["last_name", "Carroll"], ["email", "user-58@example.com"], ["password_digest", "$2a$10$EBn05yTQvCxtILWZJK4AMOifTBAQ/BIXB2k1Hl2HX9pKSC/XGujPq"], ["created_at", "2015-04-24 14:47:55.737220"], ["updated_at", "2015-04-24 14:47:55.737220"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-59@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Jennings"], ["last_name", "Brown"], ["email", "user-59@example.com"], ["password_digest", "$2a$10$qYHRZtLiGDLTKyunOwp0GOAppm4QSFXX1oEZqLjc72jZ0iXJ0WBr2"], ["created_at", "2015-04-24 14:47:55.813786"], ["updated_at", "2015-04-24 14:47:55.813786"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-60@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Manuel"], ["last_name", "Cartwright"], ["email", "user-60@example.com"], ["password_digest", "$2a$10$TbCsCBBknREBTAF35Kz/UO8i7IMchEPEo8XnF6LtbE0Aartv5n7kG"], ["created_at", "2015-04-24 14:47:55.882606"], ["updated_at", "2015-04-24 14:47:55.882606"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-61@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Tracy"], ["last_name", "Jones"], ["email", "user-61@example.com"], ["password_digest", "$2a$10$f57qdKnSOH6U05viB3W.Ee63AO7JN2fPsg4mBMMGeWkkCbbgvAf6u"], ["created_at", "2015-04-24 14:47:55.954512"], ["updated_at", "2015-04-24 14:47:55.954512"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-62@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Easter"], ["last_name", "Cronin"], ["email", "user-62@example.com"], ["password_digest", "$2a$10$gfMhyenrSdJ9c38Sb6uDhul2rjUrgEtqkZxAOq/c/D6Grp0Xt1UtK"], ["created_at", "2015-04-24 14:47:56.027588"], ["updated_at", "2015-04-24 14:47:56.027588"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-63@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Rosa"], ["last_name", "Heaney"], ["email", "user-63@example.com"], ["password_digest", "$2a$10$9xCb..LWgSEarG4Lnv6ja.wl3e7uPki1P32UeClYB1iELk9wSKN/."], ["created_at", "2015-04-24 14:47:56.104401"], ["updated_at", "2015-04-24 14:47:56.104401"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-64@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Jarred"], ["last_name", "Bechtelar"], ["email", "user-64@example.com"], ["password_digest", "$2a$10$dEakuRzQ3rB7q8UlTspCY.bTO6pO91Ri2juygMoaYta8yw9Brz48i"], ["created_at", "2015-04-24 14:47:56.175249"], ["updated_at", "2015-04-24 14:47:56.175249"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-65@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Delores"], ["last_name", "Brakus"], ["email", "user-65@example.com"], ["password_digest", "$2a$10$6neikqctYhM6JxRKc7r2I.C4ucwzoQ3JnyFxwT4oxSvXgPPmMEqk."], ["created_at", "2015-04-24 14:47:56.253566"], ["updated_at", "2015-04-24 14:47:56.253566"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-66@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Dewayne"], ["last_name", "Gibson"], ["email", "user-66@example.com"], ["password_digest", "$2a$10$fwPZxdesFoLWbL4dMs.QreMa4Etp1GIA6aWP1y/i1waK9jm9nwAn2"], ["created_at", "2015-04-24 14:47:56.327393"], ["updated_at", "2015-04-24 14:47:56.327393"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-67@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Elta"], ["last_name", "Ziemann"], ["email", "user-67@example.com"], ["password_digest", "$2a$10$VLfTWiL9LjBWebUgGzcLduC0pt9JOsdTwrbgPXebLBt69slm7JO8G"], ["created_at", "2015-04-24 14:47:56.405790"], ["updated_at", "2015-04-24 14:47:56.405790"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-68@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Rey"], ["last_name", "Roberts"], ["email", "user-68@example.com"], ["password_digest", "$2a$10$NOs9rXR0oo/Oyup1.w3uoOwoPMbTpYSBdtq5iRKFWHRBzANdgGREW"], ["created_at", "2015-04-24 14:47:56.481742"], ["updated_at", "2015-04-24 14:47:56.481742"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-69@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Danika"], ["last_name", "Crona"], ["email", "user-69@example.com"], ["password_digest", "$2a$10$11J2eCS8MoyLCG4MWj3RCOvCoKWDvMVlQJvAG7YFDfjHDlwlBcChC"], ["created_at", "2015-04-24 14:47:56.559330"], ["updated_at", "2015-04-24 14:47:56.559330"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-70@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Ari"], ["last_name", "Bode"], ["email", "user-70@example.com"], ["password_digest", "$2a$10$j0T4pyLzKhirZ9a9TDugnuCb36OQnuvlDlrNkolOCKC2CwZvRHLg."], ["created_at", "2015-04-24 14:47:56.631297"], ["updated_at", "2015-04-24 14:47:56.631297"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-71@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Anibal"], ["last_name", "Bahringer"], ["email", "user-71@example.com"], ["password_digest", "$2a$10$OnoNlA3cLIDotEUi45gHFe7eU4slAGpcwiK9NiNeOZXQAumeckOBW"], ["created_at", "2015-04-24 14:47:56.704066"], ["updated_at", "2015-04-24 14:47:56.704066"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-72@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Matilda"], ["last_name", "Ziemann"], ["email", "user-72@example.com"], ["password_digest", "$2a$10$xifpdOmoScha.LBYiFU6LO16GwgskhUbU3ZhH0x/UYXd7r/cC2jPy"], ["created_at", "2015-04-24 14:47:56.773535"], ["updated_at", "2015-04-24 14:47:56.773535"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-73@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Tanya"], ["last_name", "Conn"], ["email", "user-73@example.com"], ["password_digest", "$2a$10$sGe8fhKhn3Gtk41hiTs9jeLrVgLy2q9cTXs2fi5tScEOIc9muK.RC"], ["created_at", "2015-04-24 14:47:56.846842"], ["updated_at", "2015-04-24 14:47:56.846842"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-74@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Hilbert"], ["last_name", "Stamm"], ["email", "user-74@example.com"], ["password_digest", "$2a$10$J4DQNOl17tRLtxiCsql6BeIqGw.hF.SWCYzZN45NqDfwn06IHf4Iy"], ["created_at", "2015-04-24 14:47:56.917501"], ["updated_at", "2015-04-24 14:47:56.917501"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-75@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Magnus"], ["last_name", "Purdy"], ["email", "user-75@example.com"], ["password_digest", "$2a$10$e1o6JKR0guecFHkUXcZz4e17UiPz3f7M28Mjr.M4FcEErd4rDJRhS"], ["created_at", "2015-04-24 14:47:56.988322"], ["updated_at", "2015-04-24 14:47:56.988322"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-76@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Carson"], ["last_name", "Beer"], ["email", "user-76@example.com"], ["password_digest", "$2a$10$fkJRxaWWAvRAD//uS229S.EMtjGo70nSQARwvjSfclk43E7CMD3L."], ["created_at", "2015-04-24 14:47:57.062635"], ["updated_at", "2015-04-24 14:47:57.062635"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-77@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Palma"], ["last_name", "Kessler"], ["email", "user-77@example.com"], ["password_digest", "$2a$10$fPLYi6otm1.dnEYEB.pQZufiuSpvp71ceLf7ZZXo/oxT30UE/UoSi"], ["created_at", "2015-04-24 14:47:57.139907"], ["updated_at", "2015-04-24 14:47:57.139907"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-78@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Jakob"], ["last_name", "Borer"], ["email", "user-78@example.com"], ["password_digest", "$2a$10$rgzmhKe/X4J4vkYD3UGB1eA2dWSjzU/fmecb.qntVZn4XvXlv.GOS"], ["created_at", "2015-04-24 14:47:57.217039"], ["updated_at", "2015-04-24 14:47:57.217039"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-79@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Alexane"], ["last_name", "Greenfelder"], ["email", "user-79@example.com"], ["password_digest", "$2a$10$KlrmNr30KclWyjFP3FO5KuoZtYEn4DxX9r.v2fVbRDwRlbVs.l8iS"], ["created_at", "2015-04-24 14:47:57.290408"], ["updated_at", "2015-04-24 14:47:57.290408"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-80@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Fae"], ["last_name", "Koelpin"], ["email", "user-80@example.com"], ["password_digest", "$2a$10$srJNQrBl7MFzh.TkoSExouUttMqMXTavmX9xRofU09IKY.OieuEUK"], ["created_at", "2015-04-24 14:47:57.374807"], ["updated_at", "2015-04-24 14:47:57.374807"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-81@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Armani"], ["last_name", "Reichel"], ["email", "user-81@example.com"], ["password_digest", "$2a$10$e9jgBWItwuOgchugEMM9FOUg8jytMRVGKPyKkISoorwIYhBhfVohG"], ["created_at", "2015-04-24 14:47:57.453602"], ["updated_at", "2015-04-24 14:47:57.453602"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-82@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Guillermo"], ["last_name", "Herman"], ["email", "user-82@example.com"], ["password_digest", "$2a$10$AK6xfWv.I3cwMF73gusOEe4ap4UO0mRfnmZnTpUJfrGP.h283GSX2"], ["created_at", "2015-04-24 14:47:57.521024"], ["updated_at", "2015-04-24 14:47:57.521024"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-83@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Evan"], ["last_name", "Homenick"], ["email", "user-83@example.com"], ["password_digest", "$2a$10$808ajXHqHiXyxdmKhMUosO8KQqlQbE7YHGmaBjEAE9z.ry3c38hvW"], ["created_at", "2015-04-24 14:47:57.593667"], ["updated_at", "2015-04-24 14:47:57.593667"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-84@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Lysanne"], ["last_name", "Reynolds"], ["email", "user-84@example.com"], ["password_digest", "$2a$10$awOavCvF2I1n1f3q45qZW.bFdW7383em0kMKIkGCUCb8yRvJR.X2y"], ["created_at", "2015-04-24 14:47:57.665989"], ["updated_at", "2015-04-24 14:47:57.665989"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-85@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Trinity"], ["last_name", "Stoltenberg"], ["email", "user-85@example.com"], ["password_digest", "$2a$10$i7/2VSqAWeDX2GqBduRKNuTly/Lgc9lZ8V7EV.oiW7B9Fb0Tz0hhC"], ["created_at", "2015-04-24 14:47:57.738481"], ["updated_at", "2015-04-24 14:47:57.738481"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-86@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Daniella"], ["last_name", "Weber"], ["email", "user-86@example.com"], ["password_digest", "$2a$10$xO2jylhjENTLx5DiVPP8zeVLf28NbtxRF9W/xKy/9xatam.BijsYq"], ["created_at", "2015-04-24 14:47:57.807171"], ["updated_at", "2015-04-24 14:47:57.807171"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-87@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Hailie"], ["last_name", "Hyatt"], ["email", "user-87@example.com"], ["password_digest", "$2a$10$cgCx4WyxmDf9jhVCyhorAuXJwcQLgaB/HWe52oTehN.63JFKMLNaa"], ["created_at", "2015-04-24 14:47:57.879407"], ["updated_at", "2015-04-24 14:47:57.879407"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-88@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Marques"], ["last_name", "Corwin"], ["email", "user-88@example.com"], ["password_digest", "$2a$10$q.4PvhL1EU350oyJsT2/lu9H7LK5NWrr6sCH4G6TFbU.bR4mxfzTC"], ["created_at", "2015-04-24 14:47:57.952067"], ["updated_at", "2015-04-24 14:47:57.952067"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-89@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Fermin"], ["last_name", "Olson"], ["email", "user-89@example.com"], ["password_digest", "$2a$10$N2QuStSRcg9nvmPRQGu6huzc4lR5wBj6tJzWIoet8CeQAwfEK.6u6"], ["created_at", "2015-04-24 14:47:58.019222"], ["updated_at", "2015-04-24 14:47:58.019222"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-90@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Modesto"], ["last_name", "Welch"], ["email", "user-90@example.com"], ["password_digest", "$2a$10$64TTallaBWZkgqlgJ5LLsOJtAjf6mcmuJeVwaF54XgWMbEeH2qz/m"], ["created_at", "2015-04-24 14:47:58.087624"], ["updated_at", "2015-04-24 14:47:58.087624"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-91@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Wilson"], ["last_name", "Klein"], ["email", "user-91@example.com"], ["password_digest", "$2a$10$4S79lXaULkfyI2Z1nwRFaepdGsX3FSaWfRRYIE2UeMBUNd5kRAAP."], ["created_at", "2015-04-24 14:47:58.155516"], ["updated_at", "2015-04-24 14:47:58.155516"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-92@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Grayson"], ["last_name", "Strosin"], ["email", "user-92@example.com"], ["password_digest", "$2a$10$8929nIkqtbytkTbfSc/swO.j0nAw06dXYgg5yADEZn1C0.lqJ.6u."], ["created_at", "2015-04-24 14:47:58.225056"], ["updated_at", "2015-04-24 14:47:58.225056"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-93@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Delphia"], ["last_name", "Krajcik"], ["email", "user-93@example.com"], ["password_digest", "$2a$10$/n6z9w.s2aAMV8.AMtGxAeD.mJQeQhaEDGmUJmNrjIGk001HcWHLO"], ["created_at", "2015-04-24 14:47:58.300631"], ["updated_at", "2015-04-24 14:47:58.300631"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-94@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Kathryn"], ["last_name", "Beatty"], ["email", "user-94@example.com"], ["password_digest", "$2a$10$/U203FRzyHUQih1eXzGUOuXvez1RDzt5a5Ur0OB0eBlvrcqFBn.ju"], ["created_at", "2015-04-24 14:47:58.373494"], ["updated_at", "2015-04-24 14:47:58.373494"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-95@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Daphne"], ["last_name", "Stehr"], ["email", "user-95@example.com"], ["password_digest", "$2a$10$qj9.FkzpvwZ639mzAM9YYuNa973UFYDa7MgQWCg6spSf49b05gxJy"], ["created_at", "2015-04-24 14:47:58.450166"], ["updated_at", "2015-04-24 14:47:58.450166"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-96@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Hilbert"], ["last_name", "Schneider"], ["email", "user-96@example.com"], ["password_digest", "$2a$10$nsUzeOmDzvBgHah...4D4.dLpDKg7Q9/IqLNDMdm87HQmoJxcPzsC"], ["created_at", "2015-04-24 14:47:58.527960"], ["updated_at", "2015-04-24 14:47:58.527960"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-97@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Wilmer"], ["last_name", "Bode"], ["email", "user-97@example.com"], ["password_digest", "$2a$10$SeN5Pn7XxdITnqt/SFoHJOfpndVOXs5D42yyawmGl/grAr6pjuVo."], ["created_at", "2015-04-24 14:47:58.602791"], ["updated_at", "2015-04-24 14:47:58.602791"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-98@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Herminia"], ["last_name", "Flatley"], ["email", "user-98@example.com"], ["password_digest", "$2a$10$yKVAJ9rd9SQh7xUj97Lx5eNfRwiQoIEszbeE..OMDOpIb6iIsZfKe"], ["created_at", "2015-04-24 14:47:58.675467"], ["updated_at", "2015-04-24 14:47:58.675467"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user-99@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Rod"], ["last_name", "Welch"], ["email", "user-99@example.com"], ["password_digest", "$2a$10$xlOSVipNTARugW8wF.nPeubeX3qP4pdDec7qkyIyykSZJiE3Zd932"], ["created_at", "2015-04-24 14:47:58.757449"], ["updated_at", "2015-04-24 14:47:58.757449"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
