@@ -27,6 +27,13 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+# Use faker to make sample users
+gem 'faker', '1.4.2'
+
+# Use will_ paginate for paginating user list
+gem 'will_paginate', '3.0.7'
+gem 'bootstrap-will_paginate', '0.0.10'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
