@@ -89,4 +89,6 @@ Rails.application.configure do
 		:password							=> ENV['SENDGRID_PASSWORD'],
 		:domain								=> 'discorsi.co',
 		:enable_starttls_auto	=> true }
+
+	config.active_record.raise_in_transactional_callbacks = true
 end
