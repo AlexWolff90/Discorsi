@@ -1,0 +1,14 @@
+<li id="point-<%= point.id %>">
+	<%= link_to gravatar_for(point.user, size: 50), point.user %>
+	<span class="user"><%= link_to "#{point.user.first_name} #{point.user.last_name}", point.user %></span>
+	<span class="content">
+		<%= point.content %>
+		<%= image_tag point.picture.url if point.picture? %>
+	</span>
+	<span class="timestamp">
+		Posted <%= time_ago_in_words(point.created_at) %> ago.
+		<% if current_user?(point.user) %>
+			<%= link_to "delete", point, method: :delete, data: { confirm: "Are you sure?" }, title: point.content %>
+		<% end %>
+	</span>
+</li>

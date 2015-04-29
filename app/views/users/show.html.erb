@@ -8,4 +8,13 @@
 			</h1>
 		</section>
 	</aside>
+	<div class="col-md-8">
+		<% if @user.points.any? %>
+			<h3>Points (<%= @user.points.count %>)</h3>
+			<ol class="points">
+				<%= render @points %>
+			</ol>
+			<%= will_paginate @points %>
+		<% end %>
+	</div>
 </div>
