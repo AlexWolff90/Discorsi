@@ -10,14 +10,17 @@ class PointsInterfaceTest < ActionDispatch::IntegrationTest
 		log_in_as(@user)
 		get root_path
 		assert_select 'div.pagination'
+		assert_select 'input[type=file]'
 		# Invalid submission
 		post points_path, point: { content: "" }
 		assert_select 'div#error_explanation'
 		# Valid submission
 		content = "This point really ties the room together"
+		picture = fixture_file_upload('test/fixtures/rails.png', 'image/png')
 		assert_difference 'Point.count', 1 do
-			post points_path, point: { content: content }
+			post points_path, point: { content: content, picture: picture }
 		end
+		assert assigns(:point).picture?
 		follow_redirect!
 		assert_match content, response.body
 		# Delete a post
