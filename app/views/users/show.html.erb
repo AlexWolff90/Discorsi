@@ -7,6 +7,14 @@
 				<%= "#{@user.first_name} #{@user.last_name}" %>
 			</h1>
 		</section>
+		<section class="stats">
+			<%= render 'shared/stats' %>
+		</section>
+		<div class="row">
+			<div class="col-md-6">
+				<%= render 'follow_form' if logged_in? %>
+			</div>
+		</div>
 	</aside>
 	<div class="col-md-8">
 		<% if @user.points.any? %>
