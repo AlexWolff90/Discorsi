@@ -13,6 +13,11 @@ class PointsController < ApplicationController
 		end
 	end
 
+	def show
+		@point = Point.find(params[:id])
+		@counterpoints = @point.counterpoints
+	end
+
 	def destroy
 		@point.destroy
 		flash[:success] = "Point deleted"

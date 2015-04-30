@@ -1,0 +1,17 @@
+<div class="row">
+	<div class="col-md-6 main-point">
+		<h3>Point</h3>
+		<ol class="points">
+			<%= render @point %>
+		</ol>
+	</div>
+	<div class="col-md-6">
+		<% if @counterpoints.any? %>
+			<h3>Counterpoints (<%= @counterpoints.count %>)</h3>
+			<ol class="points">
+				<%= render @counterpoints %>
+			</ol>
+			<%= will_paginate @counterpoints %>
+		<% end %>
+	</div>
+</div>

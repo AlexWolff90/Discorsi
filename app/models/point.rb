@@ -1,4 +1,6 @@
 class Point < ActiveRecord::Base
+	has_many :counterpoints, class_name: "Point",
+													 foreign_key: "counterpoint_to_id"
   belongs_to :user
 	default_scope -> { order('created_at DESC') }
 	mount_uploader :picture, PictureUploader
