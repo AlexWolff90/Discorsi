@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150430225826) do
+ActiveRecord::Schema.define(version: 20150501155312) do
 
   create_table "points", force: :cascade do |t|
     t.text     "content"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20150430225826) do
   end
 
   add_index "points", ["counterpoint_to_id"], name: "index_points_on_counterpoint_to_id"
+  add_index "points", ["user_id", "counterpoint_to_id"], name: "index_points_on_user_id_and_counterpoint_to_id", unique: true
   add_index "points", ["user_id", "created_at"], name: "index_points_on_user_id_and_created_at"
   add_index "points", ["user_id"], name: "index_points_on_user_id"
 

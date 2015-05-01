@@ -6,6 +6,7 @@ class Point < ActiveRecord::Base
 	mount_uploader :picture, PictureUploader
 	validates :user_id, presence: true
 	validates :content, presence: true, length: { maximum: 3000 }
+	validate	:point_counterpoint_different_user
 	validate	:picture_size
 
 	def Point.from_users_followed_by(user)
@@ -14,6 +15,12 @@ class Point < ActiveRecord::Base
 	end
 
 	private
+
+		def point_counterpoint_different_user
+			if !counterpoint_to_id.nil? && user_id == Point.find(counterpoint_to_id).user_id
+				errors.add(:user_id, "counterpoint should not be by the same user as the point")
+			end
+		end
 
 		def picture_size
 			if picture.size > 5.megabytes

@@ -16138,3 +16138,307 @@ Started GET "/assets/application.js?body=1" for ::1 at 2015-04-30 18:20:09 -0500
 
 
 Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-04-30 18:20:09 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserCounterpointUniqueIndexToPoints (20150501152454)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_counterpoint_to_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_counterpoint_to_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_user_id_and_created_at' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_user_id_and_created_at' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_user_id' AND type='index'
+
+  [1m[36m (3.8ms)[0m  [1mCREATE UNIQUE INDEX "index_points_on_user_id_and_counterpoint_to_id" ON "points" ("user_id", "counterpoint_to_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150501152454"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_user_id_and_counterpoint_to_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_user_id_and_counterpoint_to_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_counterpoint_to_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_counterpoint_to_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_user_id_and_created_at' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_user_id_and_created_at' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_follower_id_and_followed_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_follower_id_and_followed_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_follower_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_follower_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddUserCounterpointUniqueIndexToPoints (20150501152454)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_user_id_and_counterpoint_to_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_user_id_and_counterpoint_to_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_counterpoint_to_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_counterpoint_to_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_user_id_and_created_at' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_user_id_and_created_at' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.7ms)[0m  DROP INDEX "index_points_on_user_id_and_counterpoint_to_id"
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20150501152454"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_counterpoint_to_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_counterpoint_to_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_user_id_and_created_at' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_user_id_and_created_at' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_follower_id_and_followed_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_follower_id_and_followed_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_follower_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_follower_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddCounterpointUserUniqueIndexToPoints (20150501155312)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_counterpoint_to_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_counterpoint_to_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_user_id_and_created_at' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_user_id_and_created_at' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_user_id' AND type='index'
+
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "index_points_on_user_id_and_counterpoint_to_id" ON "points" ("user_id", "counterpoint_to_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150501155312"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_user_id_and_counterpoint_to_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_user_id_and_counterpoint_to_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_counterpoint_to_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_counterpoint_to_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_user_id_and_created_at' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_user_id_and_created_at' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_points_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_points_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_follower_id_and_followed_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_follower_id_and_followed_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_follower_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_follower_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPoint Load (0.1ms)[0m  [1mSELECT  "points".* FROM "points" WHERE "points"."id" = ?  ORDER BY created_at DESC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPoint Load (0.1ms)[0m  [1mSELECT  "points".* FROM "points" WHERE "points"."id" = ?  ORDER BY created_at DESC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPoint Exists (0.1ms)[0m  SELECT  1 AS one FROM "points" WHERE ("points"."counterpoint_to_id" = 1 AND "points"."user_id" = 1) LIMIT 1
+  [1m[36mPoint Load (0.0ms)[0m  [1mSELECT  "points".* FROM "points" WHERE "points"."id" = ?  ORDER BY created_at DESC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPoint Exists (0.1ms)[0m  SELECT  1 AS one FROM "points" WHERE ("points"."counterpoint_to_id" = 1 AND "points"."user_id" = 1) LIMIT 1
+  [1m[36mPoint Load (0.1ms)[0m  [1mSELECT  "points".* FROM "points" WHERE "points"."id" = ?  ORDER BY created_at DESC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPoint Exists (0.2ms)[0m  SELECT  1 AS one FROM "points" WHERE ("points"."counterpoint_to_id" = 874239834 AND "points"."user_id" = 1) LIMIT 1
+  [1m[36mPoint Load (0.1ms)[0m  [1mSELECT  "points".* FROM "points" WHERE "points"."id" = ?  ORDER BY created_at DESC LIMIT 1[0m  [["id", 874239834]]
+  [1m[35mPoint Exists (0.2ms)[0m  SELECT  1 AS one FROM "points" WHERE ("points"."counterpoint_to_id" = 4 AND "points"."user_id" = 1) LIMIT 1
+  [1m[36mPoint Load (0.1ms)[0m  [1mSELECT  "points".* FROM "points" WHERE "points"."id" = ?  ORDER BY created_at DESC LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  rollback transaction
