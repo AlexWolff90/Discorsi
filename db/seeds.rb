@@ -29,10 +29,23 @@ User.create!(first_name: "Example",
 							 activated_at: Time.zone.now)
 end
 
-users = User.order(:created_at).take(6)
+users = User.order(:created_at).take(50)
+sentence_lengths = (5..100).to_a
 50.times do
-	content = Faker::Lorem.sentence(5)
+	content = Faker::Lorem.sentence(sentence_lengths.sample)
 	users.each { |user| user.points.create!(content: content) }
+end
+
+counterpoint_ids = (1..Point.all.count).to_a
+users.each do |user|
+	points = user.points
+	points.each do |point|
+		counterpoint_id = counterpoint_ids.sample
+		unless point.nil?
+			point.counterpoint_to_id =  counterpoint_id unless counterpoint_id % 5 == 0
+			point.save if point.valid?
+		end
+	end
 end
 
 # Following relationships

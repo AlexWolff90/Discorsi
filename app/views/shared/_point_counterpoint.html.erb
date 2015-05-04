@@ -1,0 +1,14 @@
+<div class="row">
+	<div class="col-md-6">
+		<%= render main_point %>
+	</div>
+		<div class="col-md-6">
+			<% if main_point.counterpoints.any? %>
+				<%= render main_point.counterpoints.first %>
+			<% else %>
+				<li>
+					<h4>Be the first person to write a couterpoint</h4>
+				</li>
+			<% end %>
+		</div>
+</div>

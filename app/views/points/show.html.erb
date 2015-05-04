@@ -1,9 +1,11 @@
 <div class="row">
-	<div class="col-md-6 main-point">
-		<h3>Point</h3>
-		<ol class="points">
-			<%= render @point %>
-		</ol>
+	<div class="col-md-6">
+		<div class="main-point">
+			<h3>Point</h3>
+			<ol class="points">
+				<%= render @point %>
+			</ol>
+		</div>
 	</div>
 	<div class="col-md-6">
 		<% if @counterpoints.any? %>

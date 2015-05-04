@@ -15,7 +15,7 @@ class PointsController < ApplicationController
 
 	def show
 		@point = Point.find(params[:id])
-		@counterpoints = @point.counterpoints
+		@counterpoints = @point.counterpoints.paginate(page: params[:page])
 	end
 
 	def destroy

@@ -1,6 +1,8 @@
 <% if @feed_items.any? %>
 	<ol class="points">
-		<%= render @feed_items %>
+		<% @feed_items.each do |feed_item| %>
+			<%= render 'shared/point_counterpoint', main_point: feed_item %>
+		<% end %>
 	</ol>
 	<%= will_paginate @feed_items %>
 <% end %>
