@@ -2,10 +2,11 @@
 	<%= link_to gravatar_for(point.user, size: 50), point.user %>
 	<span class="user"><%= link_to "#{point.user.first_name} #{point.user.last_name}", point.user %></span>
 	<span class="content">
-			<a href="<%= point_path(point) %>">
-				<%= point.content %>
-			</a>
-		<%= image_tag point.picture.url if point.picture? %>
+		<% if request.env['PATH_INFO'] == point_path(point) %>
+			<%= point.content %>
+		<% else %>
+			<%= link_to point.content, point_path(point) %>
+		<% end %>
 	</span>
 	<span class="timestamp">
 		Posted <%= time_ago_in_words(point.created_at) %> ago.
