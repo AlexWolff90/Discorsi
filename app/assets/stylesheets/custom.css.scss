@@ -12,11 +12,22 @@
 /* universal*/
 
 html {
+	height: 100%;
 	overflow-y: scroll;
 }
 
 body {
+	height: 100%;
 	padding-top: 60px;
+}
+
+#holder {
+	min-height: 100%;
+	position: relative;
+}
+
+#body {
+	padding-bottom: 60px;
 }
 
 section {
@@ -84,8 +95,10 @@ p {
 }
 
 /* footer */
-
 footer {
+	position: absolute;
+	bottom: 0;
+	width: 80%;
 	margin-top: 45px;
 	padding-top: 5px;
 	border-top: 1px solid #eaeaea;
@@ -205,6 +218,10 @@ input {
 	height: auto !important;
 }
 
+.point-textarea {
+	height: 20em;
+}
+
 #error_explanation {
 	color: red;
 	ul {
@@ -258,10 +275,15 @@ input {
 	.user {
 		margin-top: 5em;
 		padding-top: 0;
+		font-weight: bold;
 	}
 	.content {
 		display: block;
-		margin-left: 60px
+		margin-left: 60px;
+		a {
+			color: black;
+			text-decoration: none;
+		}
 		img {
 			display: block;
 			padding: 5px 0;
@@ -279,15 +301,20 @@ input {
 	}
 }
 
-.main-point {
-	position: fixed;
-}
-
 aside {
 	textarea{
 		height: 100px;
 		margin-bottom: 5px;
 	}
+}
+
+.main-point {
+	position: fixed;
+	width: 40%;
+}
+
+.counterpoints {
+	float: right;
 }
 
 span.picture {

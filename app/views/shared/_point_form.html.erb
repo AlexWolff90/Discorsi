@@ -1,7 +1,8 @@
 <%= form_for(@point, html: { multipart: true}) do |f| %>
 	<%= render 'shared/error_messages', object: f.object %>
+	<%= hidden_field_tag :counterpoint_to_id, counterpoint_to_id if defined? counterpoint_to_id %>
 	<div class="field">
-		<%= f.text_area :content, placeholder: "Compose new point..." %>
+		<%= f.text_area :content, class: "point-textarea", placeholder: "Compose new point..." %>
 	</div>
 	<%= f.submit "Post", class: "btn btn-primary" %>
 	<span class="picture">

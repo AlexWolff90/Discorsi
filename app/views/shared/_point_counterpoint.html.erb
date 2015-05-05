@@ -2,13 +2,17 @@
 	<div class="col-md-6">
 		<%= render main_point %>
 	</div>
-		<div class="col-md-6">
-			<% if main_point.counterpoints.any? %>
-				<%= render main_point.counterpoints.first %>
-			<% else %>
-				<li>
-					<h4>Be the first person to write a couterpoint</h4>
-				</li>
-			<% end %>
-		</div>
+	<div class="col-md-6">
+		<% if main_point.counterpoints.any? %>
+			<%= render main_point.counterpoints.first %>
+		<% else %>
+			<li>
+				<% unless main_point.user_id == current_user.id %>
+					<h5>Be the first person to write a couterpoint</h5>
+				<% else %>
+					<h5>No one has countered your point yet</h5>
+				<% end %>
+			</li>
+		<% end %>
+	</div>
 </div>

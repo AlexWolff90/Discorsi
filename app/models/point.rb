@@ -5,7 +5,7 @@ class Point < ActiveRecord::Base
 	default_scope -> { order('created_at DESC') }
 	mount_uploader :picture, PictureUploader
 	validates :user_id, presence: true
-	validates :counterpoint_to_id, uniqueness: { scope: :user_id }, unless: "counterpoint_to_id.nil?"
+	validates :counterpoint_to_id, uniqueness: { scope: :user_id, message: "You cannot post two counterpoints to the same point" }, unless: "counterpoint_to_id.nil?"
 	validates :content, presence: true, length: { maximum: 3000 }
 	validate	:point_counterpoint_different_user
 	validate	:picture_size

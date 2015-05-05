@@ -1,28 +1,13 @@
 <% if logged_in? %>
 	<div class="row">
-		<aside class="col-md-4">
-			<section class="user_info">
-				<%= render 'shared/user_info' %>
-			</section>
-			<section class="stats">
-				<%= render 'shared/stats' %>
-			</section>
-			<section class="point_form">
-				<%= render 'shared/point_form' %>
-			</section>
-		</aside>
-		<div class="col-md-8">
-			<div class="row">
-				<div class="col-md-6">
-					<h3>Points</h3>
-				</div>
-				<div class="col-md-6">
-					<h3>Counterpoints</h3>
-				</div>
-			</div>
-			<%= render 'shared/feed' %>
+		<div class="col-md-6">
+			<h3>Point</h3>
+		</div>
+		<div class="col-md-6">
+			<h3>Counterpoint</h3>
 		</div>
 	</div>
+	<%= render 'shared/feed' %>
 <% else %>
 	<div class="center jumbotron">
 		<h1>Welcome to Discorsi!</h1>

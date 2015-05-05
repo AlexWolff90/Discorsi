@@ -2,13 +2,17 @@
 	<%= link_to gravatar_for(point.user, size: 50), point.user %>
 	<span class="user"><%= link_to "#{point.user.first_name} #{point.user.last_name}", point.user %></span>
 	<span class="content">
-		<%= point.content %>
+			<a href="<%= point_path(point) %>">
+				<%= point.content %>
+			</a>
 		<%= image_tag point.picture.url if point.picture? %>
 	</span>
 	<span class="timestamp">
 		Posted <%= time_ago_in_words(point.created_at) %> ago.
 		<% if current_user?(point.user) %>
 			<%= link_to "delete", point, method: :delete, data: { confirm: "Are you sure?" }, title: point.content %>
+		<% elsif request.env['PATH_INFO'] != new_point_path && Point.where(user_id: current_user, counterpoint_to_id: point.id).empty? %>
+			<h5><%= link_to "Counter", new_point_path(counterpoint_to_id: point.id) %></h5>
 		<% end %>
 	</span>
 </li>
