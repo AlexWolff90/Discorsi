@@ -3,9 +3,9 @@
 	<span class="user"><%= link_to "#{point.user.first_name} #{point.user.last_name}", point.user %></span>
 	<span class="content">
 		<% if request.env['PATH_INFO'] == point_path(point) %>
-			<%= point.content %>
+			<%= simple_format(point.content) %>
 		<% else %>
-			<%= link_to point.content, point_path(point) %>
+			<%= link_to simple_format(point.content), point_path(point) %>
 		<% end %>
 	</span>
 	<span class="timestamp">
