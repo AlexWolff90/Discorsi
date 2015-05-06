@@ -15,8 +15,22 @@ class Point < ActiveRecord::Base
 		where("user_id IN (#{following_ids}) OR user_id = :user_id", following_ids: following_ids, user_id: user)
 	end
 
+	def user
+		User.find(user_id)
+	end
+
 	def countered_user
 		User.find(Point.find(counterpoint_to_id).user_id)
+	end
+
+	def upvote
+		upvotes += 1
+		save
+	end
+
+	def downvote
+		downvotes += 1
+		save
 	end
 
 	private

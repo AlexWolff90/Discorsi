@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150501155312) do
+ActiveRecord::Schema.define(version: 20150506162351) do
 
   create_table "points", force: :cascade do |t|
     t.text     "content"
@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 20150501155312) do
     t.datetime "updated_at",         null: false
     t.string   "picture"
     t.integer  "counterpoint_to_id"
+    t.integer  "upvotes"
+    t.integer  "downvotes"
   end
 
   add_index "points", ["counterpoint_to_id"], name: "index_points_on_counterpoint_to_id"
