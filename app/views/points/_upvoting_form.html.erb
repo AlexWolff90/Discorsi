@@ -1,5 +1,5 @@
-<% if !logged_in? %>
-	<%= "Upvotes (#{point.upvote_count})" %>
+<% if !logged_in? || current_user?(point.user) %>
+	Upvotes (<%= point.upvote_count %>)
 <% elsif point.upvoted_by?(current_user) %>
 	<%= render 'points/unupvote', point: point %>
 <% else %>

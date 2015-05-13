@@ -1,4 +1,2 @@
-<% unless current_user?(point.user) %>
-	<span class="upvoting-form"><%= render 'points/upvoting_form', point: point %> </span>
-	<!--<span class="downvoting_form"><%#= render 'points/downvoting_form', point: point %></span>-->
-<% end %>
+<span class="upvoting-form"><%= render 'points/upvoting_form', point: point %> </span>
+<!--<span class="downvoting_form"><%#= render 'points/downvoting_form', point: point %></span>-->
