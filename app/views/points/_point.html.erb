@@ -14,10 +14,16 @@
 	</span>
 	<span class="timestamp">
 		Posted <%= time_ago_in_words(point.created_at) %> ago.
-		<% if current_user?(point.user) %>
-			<%= link_to "delete", point, method: :delete, data: { confirm: "Are you sure?" }, title: point.content %>
-		<% elsif request.env['PATH_INFO'] != new_point_path && Point.where(user_id: current_user, counterpoint_to_id: point.id).empty? %>
-			<h5><%= link_to "Counter", new_point_path(counterpoint_to_id: point.id) %></h5>
-		<% end %>
+		<%= link_to "delete", point, method: :delete, data: { confirm: "Are you sure?" }, title: point.content if current_user?(point.user)%>
 	</span>
+	<h5>
+		<div class="voting-form">
+			<%= render 'points/voting_form', point: point %>
+		</div>
+	</h5>
+	<% if request.env['PATH_INFO'] != new_point_path && 
+				Point.where(user_id: current_user, counterpoint_to_id: point.id).empty? &&
+				!current_user?(point.user)%>
+		<h5><%= link_to "Counter", new_point_path(counterpoint_to_id: point.id), class: "counter" %></h5>
+	<% end %>
 </li>

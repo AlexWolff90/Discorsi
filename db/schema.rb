@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150506162351) do
+ActiveRecord::Schema.define(version: 20150513173924) do
 
   create_table "points", force: :cascade do |t|
     t.text     "content"
@@ -20,8 +20,6 @@ ActiveRecord::Schema.define(version: 20150506162351) do
     t.datetime "updated_at",         null: false
     t.string   "picture"
     t.integer  "counterpoint_to_id"
-    t.integer  "upvotes"
-    t.integer  "downvotes"
   end
 
   add_index "points", ["counterpoint_to_id"], name: "index_points_on_counterpoint_to_id"
@@ -57,5 +55,18 @@ ActiveRecord::Schema.define(version: 20150506162351) do
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
+
+  create_table "votes", force: :cascade do |t|
+    t.string   "vote_type"
+    t.integer  "point_id"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "votes", ["point_id", "vote_type"], name: "index_votes_on_point_id_and_vote_type"
+  add_index "votes", ["point_id"], name: "index_votes_on_point_id"
+  add_index "votes", ["user_id", "point_id"], name: "index_votes_on_user_id_and_point_id", unique: true
+  add_index "votes", ["user_id"], name: "index_votes_on_user_id"
 
 end

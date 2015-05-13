@@ -1,0 +1,5 @@
+<%= form_for(point.votes.build(user_id: current_user, vote_type: 'downvote'), remote: true) do |f| %>
+	<div><%= hidden_field_tag :point_id, point.id %></div>
+	<div><%= hidden_field_tag :vote_type, 'downvote' %> </div>
+	<%= f.submit "Downvote (#{point.downvote_count})", class: "btn btn-primary" %>
+<% end %>

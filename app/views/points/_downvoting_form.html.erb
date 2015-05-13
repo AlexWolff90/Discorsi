@@ -1,0 +1,5 @@
+<% if point.downvoted_by?(current_user) %>
+	<%= render 'points/undownvote', point: point %>
+<% else %>
+	<%= render 'points/downvote', point: point %>
+<% end %>

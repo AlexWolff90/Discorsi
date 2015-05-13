@@ -1,11 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  vote_type: MyString
-  point_id: 1
-  user_id: 1
-
-two:
-  vote_type: MyString
-  point_id: 1
-  user_id: 1
+        point: ants
+        vote_type: 'upvote'
+        user: archer
