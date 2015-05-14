@@ -16,8 +16,12 @@
 		<% end %>
 	</div>
 </div>
-<div class="row">
-	<div class="col-md-12">
-		<h4><%= link_to 'View Debate', '#', class: "debate-link" %></h4>
+<% if main_point.counterpoints.any? && main_point.counterpoints.first.is_debate? %>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="debate-link">
+				<h4><%= link_to 'View Debate', '#' %></h4>
+			</div>
+		</div>
 	</div>
-</div>
+<% end %>

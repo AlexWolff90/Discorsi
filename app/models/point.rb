@@ -21,7 +21,15 @@ class Point < ActiveRecord::Base
 	end
 
 	def countered_user
-		User.find(Point.find(counterpoint_to_id).user_id)
+		Point.find(counterpoint_to_id).user
+	end
+
+	def is_debate?
+		unless counterpoint_to_id.nil?
+			return true unless counterpoints.find_by(user: Point.find(counterpoint_to_id).user).nil?
+			cp_to_cp_to = Point.find(counterpoint_to_id).counterpoint_to_id
+			true if !cp_to_cp_to.nil? && Point.find(cp_to_cp_to).user == user
+		end
 	end
 
 	def vote(user,type)

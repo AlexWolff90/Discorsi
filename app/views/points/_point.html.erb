@@ -1,10 +1,15 @@
 <li id="point-<%= point.id %>">
 	<%= link_to gravatar_for(point.user, size: 50), point.user %>
 	<span class="user"><%= link_to "#{point.user.first_name} #{point.user.last_name}", point.user %></span>
-	<% unless point.counterpoint_to_id.nil? %>
+	<% unless point.counterpoint_to_id.nil? || request.env['PATH_INFO'] == point_path(point.counterpoint_to_id) %>
 		countered 
 		<span class="counterpoint-to"><%= link_to "#{point.countered_user.first_name} #{point.countered_user.last_name}'s	point", point_path(point.counterpoint_to_id) %></span>
 	<% end %>
+	<div class="show-view-debate">
+		<% if !point.counterpoint_to_id.nil? && request.env['PATH_INFO'] == point_path(point.counterpoint_to_id)  && point.is_debate? %>
+			<h4><%= link_to "View Debate", '#' %></h4>
+		<% end %>
+	</div>
 	<span class="content">
 		<% if request.env['PATH_INFO'] == point_path(point) %>
 			<%= simple_format(point.content) %>
@@ -21,9 +26,10 @@
 			<%= render 'points/voting_form', point: point %>
 		</div>
 	</h5>
+	<h5><%= link_to "Counters (#{point.counterpoints.count})", point_path(point), class: "view-counters" unless request.env['PATH_INFO'] == point_path(point)%></h5>
 	<% if request.env['PATH_INFO'] != new_point_path && 
 				Point.where(user_id: current_user, counterpoint_to_id: point.id).empty? &&
 				!current_user?(point.user)%>
-		<h5><%= link_to "Counter", new_point_path(counterpoint_to_id: point.id), class: "counter" %></h5>
+		<h5><%= link_to "Counter", new_point_path(counterpoint_to_id: point.id), class: "counter-link" %></h5>
 	<% end %>
 </li>

@@ -303,14 +303,23 @@ input {
 		margin-top: 5em;
 		padding-top: 0;
 		font-weight: bold;
+		display: inline;
 	}
 	.counterpoint-to {
 		margin-top: 5em;
 		padding-top: 0;
 		font-weight: bold;
 	}
+	.show-view-debate {
+		display: inline;
+		float: right;
+		margin-top: -1em;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
 	.content {
 		display: block;
+		margin-top: 4px;
 		margin-left: 60px;
 		color: black;
 		a {
@@ -337,7 +346,7 @@ input {
 		float: left;
 		display: inline-block;
 		margin-left: 60px;
-		margin-right: 15px;
+		margin-right: 7px;
 		input[type="submit"] {
 			background-color: transparent;
 			border: none;
@@ -356,8 +365,23 @@ input {
 			color: gray;
 		}
 	}
+	.view-counters {
+		display: inline;
+		float: left;
+		margin-left: 8px;
+		margin-right: 7px;
+	}
+	.counter-link {
+		display: inline;
+		float: left;
+		margin-left: 8px;
+		margin-right: 7px;
+	}
 	.debate-link {
 		text-align: center;
+		margin-top: -25px;
+		margin-bottom: 20px;
+		overflow: auto;
 	}
 }
 
