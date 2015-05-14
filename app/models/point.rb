@@ -1,6 +1,7 @@
 class Point < ActiveRecord::Base
 	has_many :counterpoints, class_name: "Point",
 													 foreign_key: "counterpoint_to_id"
+	belongs_to :point, foreign_key: "counterpoint_to_id"
   belongs_to :user
 	has_many :votes, dependent: :destroy
 	default_scope -> { order('created_at DESC') }
@@ -26,7 +27,7 @@ class Point < ActiveRecord::Base
 
 	def is_debate?
 		unless counterpoint_to_id.nil?
-			return true unless counterpoints.find_by(user: Point.find(counterpoint_to_id).user).nil?
+			return true unless counterpoints.find_by(user: countered_user).nil?
 			cp_to_cp_to = Point.find(counterpoint_to_id).counterpoint_to_id
 			true if !cp_to_cp_to.nil? && Point.find(cp_to_cp_to).user == user
 		end

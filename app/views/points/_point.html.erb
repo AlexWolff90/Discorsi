@@ -1,13 +1,13 @@
 <li id="point-<%= point.id %>">
 	<%= link_to gravatar_for(point.user, size: 50), point.user %>
 	<span class="user"><%= link_to "#{point.user.first_name} #{point.user.last_name}", point.user %></span>
-	<% unless point.counterpoint_to_id.nil? || request.env['PATH_INFO'] == point_path(point.counterpoint_to_id) %>
+	<% unless point.counterpoint_to_id.nil? || request.env['PATH_INFO'] == point_path(point.counterpoint_to_id) || request.env['PATH_INFO'] == debates_show_path %>
 		countered 
 		<span class="counterpoint-to"><%= link_to "#{point.countered_user.first_name} #{point.countered_user.last_name}'s	point", point_path(point.counterpoint_to_id) %></span>
 	<% end %>
 	<div class="show-view-debate">
 		<% if !point.counterpoint_to_id.nil? && request.env['PATH_INFO'] == point_path(point.counterpoint_to_id)  && point.is_debate? %>
-			<h4><%= link_to "View Debate", '#' %></h4>
+			<h4><%= link_to "View Debate", debates_show_path(point_id: point.id) %></h4>
 		<% end %>
 	</div>
 	<span class="content">

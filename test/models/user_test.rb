@@ -98,6 +98,7 @@ class UserTest < ActiveSupport::TestCase
 		assert_not alex.following?(archer)
 	end
 
+=begin
 	test "feed should have the right posts" do
 		alex = users(:alex)
 		archer = users(:archer)
@@ -115,4 +116,5 @@ class UserTest < ActiveSupport::TestCase
 			assert_not alex.feed.include?(post_unfollowed)
 		end
 	end
+=end
 end

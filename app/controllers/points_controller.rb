@@ -1,6 +1,7 @@
 class PointsController < ApplicationController
 	before_action :logged_in_user,	only: [:create, :destroy]
 	before_action :correct_user,		only: :destroy
+	before_action :remove_references, only: :destroy
 
 	def new
 		@counterpoint_to = Point.find(params[:counterpoint_to_id]) unless params[:counterpoint_to_id].nil?
@@ -27,10 +28,16 @@ class PointsController < ApplicationController
 	def destroy
 		@point.destroy
 		flash[:success] = "Point deleted"
-		redirect_to request.referrer || root_url
+			redirect_to root_url
 	end
 
 	private
+
+		def remove_references
+			@point.counterpoints.each do |counterpoint|
+				counterpoint.update(counterpoint_to_id: nil)
+			end
+		end
 
 		def point_params
 			params.require(:point).permit(:content, :picture)

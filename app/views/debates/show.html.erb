@@ -1,0 +1,12 @@
+<div class="debate-header">
+	<h3>Debate</h3>
+</div>
+<% if @debate_items.any? %>
+	<ol class="points">
+		<% @debate_items.each_slice(2) do |debate_slice| %>
+			<%= render 'debate_points', point: debate_slice[0], counterpoint: debate_slice[1] %>
+		<% end %>
+	</ol>
+	<%= will_paginate @debate_items %>
+<% end %>
+

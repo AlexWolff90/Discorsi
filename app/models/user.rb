@@ -101,7 +101,8 @@ class User < ActiveRecord::Base
 
 	# Returns a user's status feed
 	def feed
-		Point.from_users_followed_by(self)
+		Point.all
+		# Point.from_users_followed_by(self)
 	end
 
 	private
